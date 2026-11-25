@@ -38,10 +38,10 @@ CktPath 方法也用于以下论文：
 
 ## 数据与结果
 
-| 输入 | 预处理图 | 模型与结果 |
-|---|---|---|
-| `_data/` | `preprocessed/data/` | `_run/models/`、`_run/results/` |
-| `_data_new/` | `preprocessed/data_new/` | `_run_new/models/`、`_run_new/results/` |
+| 输入 | 说明 | 预处理图 | 模型与结果 |
+|---|---|---|---|
+| `_data/` | 论文投稿时使用的数据 | `preprocessed/data/` | `_run/models/`、`_run/results/` |
+| `_data_new/` | 投稿后重新生成的数据，晶体管电路的结构差异更大 | `preprocessed/data_new/` | `_run_new/models/`、`_run_new/results/` |
 
 - 两套数据均为 42 macro × 20 core；新数据含 folded 255 个、non-folded 585 个。
 - 每套完整实验包含 270 circuit encoder、54 decoder 和 6 target encoder。

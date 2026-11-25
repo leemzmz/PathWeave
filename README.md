@@ -38,10 +38,10 @@ CktPath is also used in:
 
 ## Data and results
 
-| Input | Preprocessed graphs | Models and results |
-|---|---|---|
-| `_data/` | `preprocessed/data/` | `_run/models/`, `_run/results/` |
-| `_data_new/` | `preprocessed/data_new/` | `_run_new/models/`, `_run_new/results/` |
+| Input | Description | Preprocessed graphs | Models and results |
+|---|---|---|---|
+| `_data/` | Dataset used in the paper submission | `preprocessed/data/` | `_run/models/`, `_run/results/` |
+| `_data_new/` | Dataset regenerated after submission, with greater structural diversity among transistor-level circuits | `preprocessed/data_new/` | `_run_new/models/`, `_run_new/results/` |
 
 - Each dataset contains 42 macromodels × 20 circuits. The new dataset includes 255 folded and 585 non-folded circuits.
 - Each complete experiment includes 270 circuit encoders, 54 decoders, and six target encoders.

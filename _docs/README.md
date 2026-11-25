@@ -1,5 +1,6 @@
 # 文档索引
 
+- 快速开始：[English](../README.md) / [简体中文](../README.zh-CN.md)，包含安装、模型复算和 CktPath 文献。
 - [当前状态](current_state.md)：功能范围、数据与结果对应关系。
 - [架构](architecture.md)：模块职责和训练、评估数据流。
 - [模型说明](model_reference.md)：图特征、编码器、损失、decoder 与指标。

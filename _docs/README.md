@@ -8,6 +8,7 @@
 - [复现指南](reproducibility.md)：无 CktPath 的模型复算、CPU/CUDA 要求、已验证范围及重新训练边界。
 - [预处理图说明](../preprocessed/README.md)：两套发布图数据和验证摘要。
 - [目录结构](directory_structure.md)：代码与产物的位置。
+- [贡献指南](../CONTRIBUTING.md)：检查要求、实验归档约定与 Git 发布检查。
 - [术语](terminology.md)：项目名词的统一定义。
 - [设计规则](design_rules.md)：实现和公平对照必须满足的约束。
 - [设计决策](decision_log.md)：核心选择及其理由。

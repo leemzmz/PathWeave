@@ -29,7 +29,6 @@ python -m pip install -r requirements.txt
 
 - [CktPath](https://github.com/leemzmz/CktPath) is a private repository, available upon request from the authors.
 - CktPath is required for processing new netlists, generating circuits, or running the original training workflow.
-- Once access is granted, place it in a sibling `path/` directory and use commit `14938f288c5dcd94f939b02970c7cf15a5505890`.
 
 CktPath is also used in:
 
@@ -103,14 +102,6 @@ PATHWEAVE_RUN_DIR=_experiments/example \
 - Relative configuration paths are resolved against the project root. Independent experiments write to their own `models/` and `results/` directories.
 - `--phase all` runs training, independent reload evaluation, and aggregation in sequence. `--stage decoder` runs the separate 10-shot decoder workflow.
 - Each archive corresponds to its original training version; do not refresh protocols to resume historical checkpoints. Reload evaluation does not guarantee identical weights when training from scratch.
-
-## Documentation and contributions
-
-The detailed guides below are currently in Chinese:
-
-- [Documentation index](_docs/README.md): architecture, models, datasets, terminology, and reproducibility.
-- [Directory structure](_docs/directory_structure.md): module responsibilities and file locations.
-- [Contribution guide](CONTRIBUTING.md): checks, archive conventions, and Git release checks.
 
 ## License
 

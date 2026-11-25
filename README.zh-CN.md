@@ -29,7 +29,6 @@ python -m pip install -r requirements.txt
 
 - [CktPath](https://github.com/leemzmz/CktPath) 为私有仓库，可向作者申请访问（available upon request）。
 - 处理新网表、电路生成或运行原始训练流程时需要 CktPath。
-- 获得访问权限后，将其放在项目同级的 `path/`，使用提交 `14938f288c5dcd94f939b02970c7cf15a5505890`。
 
 CktPath 方法也用于以下论文：
 
@@ -103,12 +102,6 @@ PATHWEAVE_RUN_DIR=_experiments/example \
 - 相对配置路径以项目根为基准；独立实验写入各自的 `models/`、`results/`。
 - `--phase all` 依次训练、独立重载评估和汇总；`--stage decoder` 单独运行 10-shot decoder。
 - 归档对应各自的训练版本，不能通过刷新协议续跑历史 checkpoint；重载评估通过不保证从头训练得到相同权重。
-
-## 文档与贡献
-
-- [文档索引](_docs/README.md)：架构、模型、数据、术语与复现指南。
-- [目录结构](_docs/directory_structure.md)：代码职责和文件位置。
-- [贡献指南](CONTRIBUTING.md)：检查要求、实验归档约定与 Git 发布检查。
 
 ## 许可证
 

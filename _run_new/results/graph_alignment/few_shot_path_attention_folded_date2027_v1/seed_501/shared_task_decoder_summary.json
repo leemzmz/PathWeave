@@ -1,0 +1,317 @@
+{
+  "aggregate": {
+    "by_backbone": {
+      "gat": {
+        "configuration_count": 3,
+        "task": {
+          "device_count_exact": 0.8793650793650793,
+          "edge_count_exact": 0.8793650793650793,
+          "ged_similarity_mean": 0.9322497094579761,
+          "graph_exact": 0.7007936507936509,
+          "ground_presence_acc": 0.8634920634920635,
+          "node_count_exact": 0.8801587301587303,
+          "primitive_count_exact": 0.8753968253968254,
+          "stage_exact": 0.953968253968254,
+          "token_exact": 0.7007936507936509,
+          "valid_graph_rate": 0.9714285714285714
+        }
+      },
+      "gin": {
+        "configuration_count": 3,
+        "task": {
+          "device_count_exact": 0.973015873015873,
+          "edge_count_exact": 0.973015873015873,
+          "ged_similarity_mean": 0.9796243664541046,
+          "graph_exact": 0.8777777777777778,
+          "ground_presence_acc": 0.9761904761904762,
+          "node_count_exact": 0.9698412698412698,
+          "primitive_count_exact": 0.9714285714285714,
+          "stage_exact": 0.9857142857142858,
+          "token_exact": 0.8777777777777778,
+          "valid_graph_rate": 0.9920634920634921
+        }
+      },
+      "graphsage": {
+        "configuration_count": 3,
+        "task": {
+          "device_count_exact": 0.923015873015873,
+          "edge_count_exact": 0.923015873015873,
+          "ged_similarity_mean": 0.9328253157488148,
+          "graph_exact": 0.7738095238095237,
+          "ground_presence_acc": 0.9063492063492063,
+          "node_count_exact": 0.9293650793650793,
+          "primitive_count_exact": 0.923015873015873,
+          "stage_exact": 0.9420634920634922,
+          "token_exact": 0.7738095238095237,
+          "valid_graph_rate": 0.9555555555555556
+        }
+      }
+    },
+    "by_backend": {
+      "graph_netlist": {
+        "configuration_count": 3,
+        "task": {
+          "device_count_exact": 0.9087301587301587,
+          "edge_count_exact": 0.9087301587301587,
+          "ged_similarity_mean": 0.9390121353240509,
+          "graph_exact": 0.734920634920635,
+          "ground_presence_acc": 0.8896825396825397,
+          "node_count_exact": 0.8984126984126984,
+          "primitive_count_exact": 0.9063492063492063,
+          "stage_exact": 0.9515873015873016,
+          "token_exact": 0.734920634920635,
+          "valid_graph_rate": 0.9706349206349206
+        }
+      },
+      "graph_path_attention": {
+        "configuration_count": 3,
+        "task": {
+          "device_count_exact": 0.9515873015873016,
+          "edge_count_exact": 0.9515873015873016,
+          "ged_similarity_mean": 0.9610574192380001,
+          "graph_exact": 0.8317460317460318,
+          "ground_presence_acc": 0.9380952380952382,
+          "node_count_exact": 0.9500000000000001,
+          "primitive_count_exact": 0.9515873015873016,
+          "stage_exact": 0.9706349206349207,
+          "token_exact": 0.8317460317460318,
+          "valid_graph_rate": 0.9785714285714286
+        }
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 3,
+        "task": {
+          "device_count_exact": 0.915079365079365,
+          "edge_count_exact": 0.915079365079365,
+          "ged_similarity_mean": 0.9446298370988444,
+          "graph_exact": 0.7857142857142857,
+          "ground_presence_acc": 0.9182539682539682,
+          "node_count_exact": 0.9309523809523809,
+          "primitive_count_exact": 0.9119047619047619,
+          "stage_exact": 0.9595238095238096,
+          "token_exact": 0.7857142857142857,
+          "valid_graph_rate": 0.9698412698412698
+        }
+      }
+    },
+    "overall": {
+      "configuration_count": 9,
+      "task": {
+        "device_count_exact": 0.9251322751322751,
+        "edge_count_exact": 0.9251322751322751,
+        "ged_similarity_mean": 0.9482331305536318,
+        "graph_exact": 0.7841269841269841,
+        "ground_presence_acc": 0.9153439153439152,
+        "node_count_exact": 0.9264550264550265,
+        "primitive_count_exact": 0.9232804232804234,
+        "stage_exact": 0.9605820105820106,
+        "token_exact": 0.7841269841269841,
+        "valid_graph_rate": 0.9730158730158729
+      }
+    }
+  },
+  "calibration_shot": 2,
+  "configurations": 9,
+  "decoder_shot": 10,
+  "decoder_training_policy": "fixed_steps_balanced_canonical_and_common_2shot_interpolation_per_group_10shot",
+  "groups": [
+    "graphsage__graph_netlist",
+    "graphsage__graph_vpath_attention",
+    "graphsage__graph_path_attention",
+    "gat__graph_netlist",
+    "gat__graph_vpath_attention",
+    "gat__graph_path_attention",
+    "gin__graph_netlist",
+    "gin__graph_vpath_attention",
+    "gin__graph_path_attention"
+  ],
+  "interpolation_alphas": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "rows": [
+    {
+      "backbone": "graphsage",
+      "backend": "graph_netlist",
+      "baseline": null,
+      "delta": null,
+      "group": "graphsage__graph_netlist",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.9071428571428571,
+        "edge_count_exact": 0.9071428571428571,
+        "ged_similarity_mean": 0.9260610420767433,
+        "graph_exact": 0.7619047619047619,
+        "ground_presence_acc": 0.8928571428571429,
+        "node_count_exact": 0.9214285714285714,
+        "primitive_count_exact": 0.9071428571428571,
+        "stage_exact": 0.9380952380952381,
+        "token_exact": 0.7619047619047619,
+        "valid_graph_rate": 0.9523809523809523
+      }
+    },
+    {
+      "backbone": "graphsage",
+      "backend": "graph_vpath_attention",
+      "baseline": null,
+      "delta": null,
+      "group": "graphsage__graph_vpath_attention",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.9071428571428571,
+        "edge_count_exact": 0.9071428571428571,
+        "ged_similarity_mean": 0.922122907250456,
+        "graph_exact": 0.7738095238095238,
+        "ground_presence_acc": 0.8952380952380953,
+        "node_count_exact": 0.9214285714285714,
+        "primitive_count_exact": 0.9071428571428571,
+        "stage_exact": 0.9285714285714286,
+        "token_exact": 0.7738095238095238,
+        "valid_graph_rate": 0.9452380952380952
+      }
+    },
+    {
+      "backbone": "graphsage",
+      "backend": "graph_path_attention",
+      "baseline": null,
+      "delta": null,
+      "group": "graphsage__graph_path_attention",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.9547619047619048,
+        "edge_count_exact": 0.9547619047619048,
+        "ged_similarity_mean": 0.9502919979192451,
+        "graph_exact": 0.7857142857142857,
+        "ground_presence_acc": 0.930952380952381,
+        "node_count_exact": 0.9452380952380952,
+        "primitive_count_exact": 0.9547619047619048,
+        "stage_exact": 0.9595238095238096,
+        "token_exact": 0.7857142857142857,
+        "valid_graph_rate": 0.969047619047619
+      }
+    },
+    {
+      "backbone": "gat",
+      "backend": "graph_netlist",
+      "baseline": null,
+      "delta": null,
+      "group": "gat__graph_netlist",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.8523809523809524,
+        "edge_count_exact": 0.8523809523809524,
+        "ged_similarity_mean": 0.9150068172376035,
+        "graph_exact": 0.6142857142857143,
+        "ground_presence_acc": 0.8,
+        "node_count_exact": 0.8047619047619048,
+        "primitive_count_exact": 0.8476190476190476,
+        "stage_exact": 0.9404761904761905,
+        "token_exact": 0.6142857142857143,
+        "valid_graph_rate": 0.9666666666666667
+      }
+    },
+    {
+      "backbone": "gat",
+      "backend": "graph_vpath_attention",
+      "baseline": null,
+      "delta": null,
+      "group": "gat__graph_vpath_attention",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.8547619047619047,
+        "edge_count_exact": 0.8547619047619047,
+        "ged_similarity_mean": 0.9259301752854843,
+        "graph_exact": 0.6738095238095239,
+        "ground_presence_acc": 0.8785714285714286,
+        "node_count_exact": 0.8928571428571429,
+        "primitive_count_exact": 0.8476190476190476,
+        "stage_exact": 0.9547619047619048,
+        "token_exact": 0.6738095238095239,
+        "valid_graph_rate": 0.969047619047619
+      }
+    },
+    {
+      "backbone": "gat",
+      "backend": "graph_path_attention",
+      "baseline": null,
+      "delta": null,
+      "group": "gat__graph_path_attention",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.930952380952381,
+        "edge_count_exact": 0.930952380952381,
+        "ged_similarity_mean": 0.9558121358508407,
+        "graph_exact": 0.8142857142857143,
+        "ground_presence_acc": 0.9119047619047619,
+        "node_count_exact": 0.9428571428571428,
+        "primitive_count_exact": 0.930952380952381,
+        "stage_exact": 0.9666666666666667,
+        "token_exact": 0.8142857142857143,
+        "valid_graph_rate": 0.9785714285714285
+      }
+    },
+    {
+      "backbone": "gin",
+      "backend": "graph_netlist",
+      "baseline": null,
+      "delta": null,
+      "group": "gin__graph_netlist",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.9666666666666667,
+        "edge_count_exact": 0.9666666666666667,
+        "ged_similarity_mean": 0.9759685466578057,
+        "graph_exact": 0.8285714285714286,
+        "ground_presence_acc": 0.9761904761904762,
+        "node_count_exact": 0.969047619047619,
+        "primitive_count_exact": 0.9642857142857143,
+        "stage_exact": 0.9761904761904762,
+        "token_exact": 0.8285714285714286,
+        "valid_graph_rate": 0.9928571428571429
+      }
+    },
+    {
+      "backbone": "gin",
+      "backend": "graph_vpath_attention",
+      "baseline": null,
+      "delta": null,
+      "group": "gin__graph_vpath_attention",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.9833333333333333,
+        "edge_count_exact": 0.9833333333333333,
+        "ged_similarity_mean": 0.985836428760593,
+        "graph_exact": 0.9095238095238095,
+        "ground_presence_acc": 0.9809523809523809,
+        "node_count_exact": 0.9785714285714285,
+        "primitive_count_exact": 0.9809523809523809,
+        "stage_exact": 0.9952380952380953,
+        "token_exact": 0.9095238095238095,
+        "valid_graph_rate": 0.9952380952380953
+      }
+    },
+    {
+      "backbone": "gin",
+      "backend": "graph_path_attention",
+      "baseline": null,
+      "delta": null,
+      "group": "gin__graph_path_attention",
+      "shot": 10,
+      "task": {
+        "device_count_exact": 0.969047619047619,
+        "edge_count_exact": 0.969047619047619,
+        "ged_similarity_mean": 0.9770681239439146,
+        "graph_exact": 0.8952380952380953,
+        "ground_presence_acc": 0.9714285714285714,
+        "node_count_exact": 0.9619047619047619,
+        "primitive_count_exact": 0.969047619047619,
+        "stage_exact": 0.9857142857142858,
+        "token_exact": 0.8952380952380953,
+        "valid_graph_rate": 0.9880952380952381
+      }
+    }
+  ],
+  "seed": 501
+}

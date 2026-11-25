@@ -1,0 +1,201 @@
+{
+    "model_name": "NMCVB",
+    "source_model": "/home/leemzmz/VibeCoding/path/_macromodel/3stg/NMCVB.json",
+    "num_stages": 3,
+    "num_main_path_units": 4,
+    "num_compensations": 2,
+    "macro_model": {
+        "stage": {
+            "main": 4,
+            "groups": [
+                [
+                    1
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    4
+                ]
+            ],
+            "diff": [
+                1
+            ]
+        },
+        "compensation": [
+            {
+                "i": 4,
+                "o": 1,
+                "type": "VB"
+            },
+            {
+                "i": 4,
+                "o": 3,
+                "type": "VB"
+            }
+        ]
+    },
+    "growth_config": {
+        "min_tail_devices": 1,
+        "max_tail_devices": 3,
+        "max_series_devices": 2,
+        "max_mos_per_vpath": 4,
+        "match_mirror_vpath_stack": true
+    },
+    "generated_at": "2026-08-26T13:39:15.470192",
+    "requested_variants": 0,
+    "generated_variants": 0,
+    "requested_core_variants": 20,
+    "generated_core_variants": 20,
+    "peripheral_variants_per_core": 0,
+    "attempt_count": 20,
+    "peripheral_attempt_count": 0,
+    "max_attempts": 400,
+    "path_validation": true,
+    "bias_addon_mode": "none",
+    "peripheral_coverage_mode": "none",
+    "core_variants": [
+        {
+            "index": 0,
+            "seed": 42,
+            "filename": "core_00.cir",
+            "fingerprint": "76782c599f3beb9272d1416a0a27fdbe632fe17b77c11f9cc9289304bb1c9baa",
+            "variants": []
+        },
+        {
+            "index": 1,
+            "seed": 59,
+            "filename": "core_01.cir",
+            "fingerprint": "bfcd15b7f8ae1008a6b6f77f072f9d43f6ca2f260b849710a6712b0a6d82d9c2",
+            "variants": []
+        },
+        {
+            "index": 2,
+            "seed": 76,
+            "filename": "core_02.cir",
+            "fingerprint": "d7116b1878d52fe0f60f1870d20913e1b8784cbb003f6ea905418077e7366b20",
+            "variants": []
+        },
+        {
+            "index": 3,
+            "seed": 93,
+            "filename": "core_03.cir",
+            "fingerprint": "bf996b36980d3916b3d5f0b6ca745f52f2930cdcbb2583a688733d85de03010e",
+            "variants": []
+        },
+        {
+            "index": 4,
+            "seed": 110,
+            "filename": "core_04.cir",
+            "fingerprint": "29cd2ac8637b98a4a2319b20f0648f0376c78c4b5da3a87ddd95681516b91a57",
+            "variants": []
+        },
+        {
+            "index": 5,
+            "seed": 127,
+            "filename": "core_05.cir",
+            "fingerprint": "1d60390a2c7b260aec589bca69264cfd06bfbd1ead04c01b8c31879e04f7c174",
+            "variants": []
+        },
+        {
+            "index": 6,
+            "seed": 144,
+            "filename": "core_06.cir",
+            "fingerprint": "6ae6b4bcfe950614165b6112c5e49e80287d7f1aa29d0b2fef4812539c8cf988",
+            "variants": []
+        },
+        {
+            "index": 7,
+            "seed": 161,
+            "filename": "core_07.cir",
+            "fingerprint": "f167c09a9e4347055df5006463d5718977391ec13f6a203da585ff237f26ea75",
+            "variants": []
+        },
+        {
+            "index": 8,
+            "seed": 178,
+            "filename": "core_08.cir",
+            "fingerprint": "28fdf9632e15b874795819153343661d946ee07591b040af09302d9582a41b92",
+            "variants": []
+        },
+        {
+            "index": 9,
+            "seed": 195,
+            "filename": "core_09.cir",
+            "fingerprint": "5173382fd31304169cfde86f2af33efcc21cf7efcbc4be368d3d73b072a65bf6",
+            "variants": []
+        },
+        {
+            "index": 10,
+            "seed": 212,
+            "filename": "core_10.cir",
+            "fingerprint": "b41b09f1074ac5c456dcc53d26d70d8894d08565d03b3f771ff0f7ab82f51f5b",
+            "variants": []
+        },
+        {
+            "index": 11,
+            "seed": 229,
+            "filename": "core_11.cir",
+            "fingerprint": "0c1470593069d1c241b8b2b6f1b2ac012e63b747ae39870982fefccaab6378de",
+            "variants": []
+        },
+        {
+            "index": 12,
+            "seed": 246,
+            "filename": "core_12.cir",
+            "fingerprint": "8e6a7bdb5644dfdbe51e29a7942a0383b71a03ed105c3b368d0c193f72913bf4",
+            "variants": []
+        },
+        {
+            "index": 13,
+            "seed": 263,
+            "filename": "core_13.cir",
+            "fingerprint": "85aa1196495a9a62b7b22f9d27eb92f8d262e76f61f1bff2d1e52d35e4d4b47c",
+            "variants": []
+        },
+        {
+            "index": 14,
+            "seed": 280,
+            "filename": "core_14.cir",
+            "fingerprint": "da4e0cb9d9a9ae3879222700a9ec4b1d672f0eca40284f5a9d63b77da9b93206",
+            "variants": []
+        },
+        {
+            "index": 15,
+            "seed": 297,
+            "filename": "core_15.cir",
+            "fingerprint": "6681db0138a179fc1f6b6d49464e7be883b4a51de1d0ce0ae974ce7d3218cb3c",
+            "variants": []
+        },
+        {
+            "index": 16,
+            "seed": 314,
+            "filename": "core_16.cir",
+            "fingerprint": "e7a22e9b43e6b4f4d46feb8a6597165f6015efb4c1745ade3aad29560ded44f8",
+            "variants": []
+        },
+        {
+            "index": 17,
+            "seed": 331,
+            "filename": "core_17.cir",
+            "fingerprint": "215c0d5ea12b1e56e990c01fc4d98caa566e8abc208811bb321496c5e2179336",
+            "variants": []
+        },
+        {
+            "index": 18,
+            "seed": 348,
+            "filename": "core_18.cir",
+            "fingerprint": "ee3d24585f3ffbb08cd81d70d4c60131d3f6589241a6341213bb81c6970d6b97",
+            "variants": []
+        },
+        {
+            "index": 19,
+            "seed": 365,
+            "filename": "core_19.cir",
+            "fingerprint": "64e33f44a919ba9814f10c00e9b55392da38016bd6e3c4ed138c2acbbf861f6a",
+            "variants": []
+        }
+    ],
+    "variants": []
+}

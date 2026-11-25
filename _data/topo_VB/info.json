@@ -1,0 +1,192 @@
+{
+    "model_name": "VB",
+    "source_model": "/home/leemzmz/VibeCoding/path/_macromodel/2stg/VB.json",
+    "num_stages": 2,
+    "num_main_path_units": 2,
+    "num_compensations": 1,
+    "macro_model": {
+        "stage": {
+            "main": 2,
+            "groups": [
+                [
+                    1
+                ],
+                [
+                    2
+                ]
+            ],
+            "diff": [
+                1
+            ]
+        },
+        "compensation": [
+            {
+                "i": 2,
+                "o": 1,
+                "type": "VB"
+            }
+        ]
+    },
+    "growth_config": {
+        "min_tail_devices": 1,
+        "max_tail_devices": 3,
+        "max_series_devices": 2,
+        "max_mos_per_vpath": 4,
+        "match_mirror_vpath_stack": true
+    },
+    "generated_at": "2026-08-26T13:39:13.346805",
+    "requested_variants": 0,
+    "generated_variants": 0,
+    "requested_core_variants": 20,
+    "generated_core_variants": 20,
+    "peripheral_variants_per_core": 0,
+    "attempt_count": 27,
+    "peripheral_attempt_count": 0,
+    "max_attempts": 400,
+    "path_validation": true,
+    "bias_addon_mode": "none",
+    "peripheral_coverage_mode": "none",
+    "core_variants": [
+        {
+            "index": 0,
+            "seed": 42,
+            "filename": "core_00.cir",
+            "fingerprint": "9e60e14913de7f162449c091995e319a624dde518d47acdaf9726c42c52e1b6b",
+            "variants": []
+        },
+        {
+            "index": 1,
+            "seed": 59,
+            "filename": "core_01.cir",
+            "fingerprint": "42e14131c1fc4fa70fb21556af65c5357e4a3566ae2c4ffb1335827bb298df4e",
+            "variants": []
+        },
+        {
+            "index": 2,
+            "seed": 76,
+            "filename": "core_02.cir",
+            "fingerprint": "b7a9e635e935fe7e9f93fc6a40dc3c7016077e34149a6f42f622cc9d2807c344",
+            "variants": []
+        },
+        {
+            "index": 3,
+            "seed": 93,
+            "filename": "core_03.cir",
+            "fingerprint": "5cf6b3c091acd3c657d0d5c17a1f667ecd8f699d0d5382275d20f971c1a21593",
+            "variants": []
+        },
+        {
+            "index": 4,
+            "seed": 110,
+            "filename": "core_04.cir",
+            "fingerprint": "db9bb3643c4c03cfe6e218251b09ee12e288dc019c971d5efa31867d5a964448",
+            "variants": []
+        },
+        {
+            "index": 5,
+            "seed": 127,
+            "filename": "core_05.cir",
+            "fingerprint": "6ba26d74a386d1220f6cf83df9c86b9df6e80f7504ad515ddf2c97ee7963b325",
+            "variants": []
+        },
+        {
+            "index": 6,
+            "seed": 144,
+            "filename": "core_06.cir",
+            "fingerprint": "abb2d8d58ff8a4e2ada39c286461a4781ac9e921720515417a1c5f9d17f790e3",
+            "variants": []
+        },
+        {
+            "index": 7,
+            "seed": 161,
+            "filename": "core_07.cir",
+            "fingerprint": "dce16c65c17e6575ece7e5255ec7968bb9e762135b46ca4b75b290de0e3ce47e",
+            "variants": []
+        },
+        {
+            "index": 8,
+            "seed": 178,
+            "filename": "core_08.cir",
+            "fingerprint": "a38b3286ba3e61f29b1e2a3eac00757c56527a0cd70c3c96aae6f08f17d80491",
+            "variants": []
+        },
+        {
+            "index": 9,
+            "seed": 195,
+            "filename": "core_09.cir",
+            "fingerprint": "1137efb50923d6461633ca1cff66605a59441f871d400352a5b662292875172a",
+            "variants": []
+        },
+        {
+            "index": 10,
+            "seed": 212,
+            "filename": "core_10.cir",
+            "fingerprint": "b626a5b4346f04b6d922e4b417b5e732afc3ca613cd235afe769e291ff05fd9c",
+            "variants": []
+        },
+        {
+            "index": 11,
+            "seed": 246,
+            "filename": "core_11.cir",
+            "fingerprint": "68865f5aeefe3b0c603cca4240d6209fd5efb92ae3f12f4ec1a4eb4dde535d9e",
+            "variants": []
+        },
+        {
+            "index": 12,
+            "seed": 263,
+            "filename": "core_12.cir",
+            "fingerprint": "5497884a9bb30cb24c993dc5dbb4277beba042746e41f675c81c6e113c0d76fa",
+            "variants": []
+        },
+        {
+            "index": 13,
+            "seed": 280,
+            "filename": "core_13.cir",
+            "fingerprint": "2031fa23adbef7f0df98ace6348916b4bc5e9b87a459f9db49b7c67c8a4f2ac7",
+            "variants": []
+        },
+        {
+            "index": 14,
+            "seed": 297,
+            "filename": "core_14.cir",
+            "fingerprint": "2524dc9aa1132806fabbe3508f581006da15ccef169c0bf443aea7b8b1199286",
+            "variants": []
+        },
+        {
+            "index": 15,
+            "seed": 314,
+            "filename": "core_15.cir",
+            "fingerprint": "912133d133b77a876f5819b0d609fb23e52f5411b34d57e6e01878fad59fb638",
+            "variants": []
+        },
+        {
+            "index": 16,
+            "seed": 331,
+            "filename": "core_16.cir",
+            "fingerprint": "4d71203a96ef2722059edde128c3bf3b7d3a232ea385a3ce098b56a70cc9e4fe",
+            "variants": []
+        },
+        {
+            "index": 17,
+            "seed": 382,
+            "filename": "core_17.cir",
+            "fingerprint": "6e297b1ee9e54e7f0057717aac010221dd18f94c6e08963cd20aa05bc7da6f7c",
+            "variants": []
+        },
+        {
+            "index": 18,
+            "seed": 450,
+            "filename": "core_18.cir",
+            "fingerprint": "36c29ab66e2bca1a99241b4a97aa156904fd4e330041fdf83eb18f5e7a04b814",
+            "variants": []
+        },
+        {
+            "index": 19,
+            "seed": 484,
+            "filename": "core_19.cir",
+            "fingerprint": "95416fe9b8c38ab94a4488a5c61c58c9ed4ac1475868f224d9edf42497d600ee",
+            "variants": []
+        }
+    ],
+    "variants": []
+}

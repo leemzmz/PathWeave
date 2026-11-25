@@ -1,0 +1,21 @@
+{
+  "data_files": 1103,
+  "snapshot_sources": 56,
+  "paper_sources": 8,
+  "protected_archive_files": 2797,
+  "status": "passed",
+  "analysis_sources": 8,
+  "models": 330,
+  "encoder_results": 270,
+  "independent_encoder_reload_audits": 270,
+  "decoder_results": 54,
+  "ged_pairs": 9841,
+  "ged_pair_coverage": "complete",
+  "shortcut_units": 30,
+  "overhead_observations": 2520,
+  "lda_panels": 9,
+  "split_manifests": 6,
+  "nested_train_test_isolation": "passed",
+  "decoder_calibration_provenance": "passed",
+  "manual_figure_review": "passed"
+}

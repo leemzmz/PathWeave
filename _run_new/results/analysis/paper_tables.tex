@@ -1,0 +1,61 @@
+% New 840-circuit dataset. Benchmark: arithmetic means; other tables: percent mean +/- sample SD over six seeds.
+
+% benchmark_stats
+\begin{tabular}{lr}
+\hline
+Metric & Value \\
+\hline
+Vertices per macromodel & 13.71 \\
+Edges per macromodel & 15.29 \\
+Mean macromodel-pair GED similarity & 0.530 \\
+Vertices per circuit & 44.02 \\
+Edges per circuit & 59.46 \\
+Vpaths per circuit & 6.49 \\
+Within-macromodel circuit GED similarity & 0.618 \\
+Across-macromodel circuit GED similarity & 0.524 \\
+\hline
+\end{tabular}
+
+% main_results
+\begin{tabular}{llccccc}
+\hline
+Backbone & Representation & 2-shot & 4-shot & 6-shot & 8-shot & 10-shot \\
+\hline
+GraphSAGE & Netlist & $27.18 \pm 1.62$ & $45.44 \pm 1.78$ & $60.16 \pm 2.16$ & $67.98 \pm 1.30$ & $70.71 \pm 3.25$ \\
+GraphSAGE & Vpath-only & $43.33 \pm 7.40$ & $65.00 \pm 1.84$ & $76.07 \pm 1.82$ & $80.87 \pm 1.51$ & $80.71 \pm 3.56$ \\
+GraphSAGE & PathWeave & $55.16 \pm 4.40$ & $71.87 \pm 1.91$ & $81.31 \pm 3.24$ & $86.98 \pm 1.50$ & $87.10 \pm 1.54$ \\
+GAT & Netlist & $29.72 \pm 4.30$ & $47.30 \pm 5.25$ & $61.63 \pm 2.35$ & $68.85 \pm 2.11$ & $69.84 \pm 3.34$ \\
+GAT & Vpath-only & $38.69 \pm 3.42$ & $55.08 \pm 3.41$ & $65.71 \pm 2.84$ & $71.87 \pm 3.56$ & $74.25 \pm 3.79$ \\
+GAT & PathWeave & $45.44 \pm 5.28$ & $66.75 \pm 5.15$ & $79.76 \pm 4.62$ & $83.89 \pm 3.73$ & $83.25 \pm 2.54$ \\
+GINE & Netlist & $32.62 \pm 6.94$ & $60.67 \pm 4.97$ & $76.67 \pm 7.11$ & $84.64 \pm 1.89$ & $88.77 \pm 2.46$ \\
+GINE & Vpath-only & $43.73 \pm 4.12$ & $67.90 \pm 4.09$ & $83.69 \pm 3.52$ & $89.33 \pm 2.79$ & $88.33 \pm 2.96$ \\
+GINE & PathWeave & $46.79 \pm 7.52$ & $70.40 \pm 2.98$ & $86.79 \pm 3.23$ & $91.39 \pm 2.40$ & $92.02 \pm 1.72$ \\
+\hline
+\end{tabular}
+
+% decoder_results
+\begin{tabular}{llcc}
+\hline
+Backbone & Metric & Netlist & PathWeave \\
+\hline
+GraphSAGE & Correct & $76.31 \pm 2.67$ & $81.11 \pm 5.15$ \\
+GraphSAGE & Valid & $95.48 \pm 1.30$ & $97.38 \pm 0.74$ \\
+GAT & Correct & $66.67 \pm 4.74$ & $78.29 \pm 2.18$ \\
+GAT & Valid & $96.11 \pm 2.41$ & $97.18 \pm 1.53$ \\
+GINE & Correct & $86.83 \pm 2.48$ & $86.75 \pm 5.99$ \\
+GINE & Valid & $98.49 \pm 0.51$ & $98.97 \pm 0.89$ \\
+\hline
+\end{tabular}
+
+% shortcut
+\begin{tabular}{lcc}
+\hline
+Shot & Size statistics & Type/port statistics \\
+\hline
+2 & $5.63 \pm 1.80$ & $20.12 \pm 1.98$ \\
+4 & $5.63 \pm 0.68$ & $22.50 \pm 1.34$ \\
+6 & $6.47 \pm 0.83$ & $24.25 \pm 1.92$ \\
+8 & $6.07 \pm 1.19$ & $25.04 \pm 1.07$ \\
+10 & $6.79 \pm 1.65$ & $26.59 \pm 1.77$ \\
+\hline
+\end{tabular}

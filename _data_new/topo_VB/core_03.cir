@@ -1,0 +1,24 @@
+*auto-generated subcircuit netlist (from TopoGen)
+.SUBCKT CKTCASE ipos ineg out b0 b1 b2 b3 b4 b5 b6 vdd gnd
+*.PININFO ipos:I ineg:I out:O b0:B b1:B b2:B b3:B b4:B b5:B b6:B vdd:B gnd:B
+
+Mn1 n_diff_2 ipos n_tail_1 gnd nmos W=w_Mn1 L=l_Mn1
+Mn2 n_diff_3 ineg n_tail_1 gnd nmos W=w_Mn2 L=l_Mn2
+Mtail1 n_tail_1 b0 n_rail_4 gnd nmos W=w_Mtail1 L=l_Mtail1
+Mtail2 n_rail_4 b1 gnd gnd nmos W=w_Mtail2 L=l_Mtail2
+MfoldSource1 n_diff_2 b2 vdd vdd pmos W=w_MfoldSource1 L=l_MfoldSource1
+MfoldSource2 n_diff_3 b2 vdd vdd pmos W=w_MfoldSource2 L=l_MfoldSource2
+Mfold1 p1 b3 n_diff_2 vdd pmos W=w_Mfold1 L=l_Mfold1
+Mfold2 n_fold_5 b3 n_diff_3 vdd pmos W=w_Mfold2 L=l_Mfold2
+MloadCas1 n_fold_5 b4 n_load_6 gnd nmos W=w_MloadCas1 L=l_MloadCas1
+MloadCas2 p1 b4 n_load_7 gnd nmos W=w_MloadCas2 L=l_MloadCas2
+MloadRef1 n_load_6 n_load_6 gnd gnd nmos W=w_MloadRef1 L=l_MloadRef1
+MloadMirror1 n_load_7 n_load_6 gnd gnd nmos W=w_MloadMirror1 L=l_MloadMirror1
+Mn3 out p1 gnd gnd nmos W=w_Mn3 L=l_Mn3
+Mp1 out b5 vdd vdd pmos W=w_Mp1 L=l_Mp1
+Mvb1 n_vb_8 out vdd vdd pmos W=w_Mvb1 L=l_Mvb1
+Mn4 n_vb_8 b6 gnd gnd nmos W=w_Mn4 L=l_Mn4
+
+Cvb1 n_vb_8 p1 c=c_Cvb1
+CL out gnd c=c_CL
+.ENDS CKTCASE

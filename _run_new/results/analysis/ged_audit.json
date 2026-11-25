@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "pair_counts": {
+    "intra": 7980,
+    "target": 861,
+    "inter": 1000
+  },
+  "exact_pair_coverage": true,
+  "cross_macro_seed": 20261124,
+  "normalization_verified": true,
+  "summaries_recomputed_exactly": true,
+  "ged_pairs_sha256": "e7f871e0d66952b8338ec27a8ce18ec64780fdf9d2fd733b42d30c7b6aa59560"
+}

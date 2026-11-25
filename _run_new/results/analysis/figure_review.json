@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    "Nine panels visually reviewed at native PNG resolution",
+    "No clipped labels, legend, or data; shared axes and colors consistent",
+    "All formats use opaque markers to match EPS capabilities",
+    "All projected coordinates exactly equal stored embeddings multiplied by the shared basis",
+    "All nine seed-42 panels have 50 test and 50 disjoint support samples",
+    "Shortcut: exact 30 seed-shot units; all means and sample SD independently recomputed"
+  ],
+  "interpretation": "PathWeave separates DFCFC2 and DFCFC3 more clearly in this fixed neighborhood; ACBC/ACBC2/DFCFC remain partly overlapping. This figure does not establish perfect separation or universally better 2D nearest-neighbor accuracy.",
+  "figure_sha256": {
+    "embedding_diagnostic.pdf": "7b7b1c477aaac66833f754c0261f9060643ded52dbacacb166863127526ddaad",
+    "embedding_diagnostic_raw.npz": "0c542975b3aa3efc8a32d421f50e2358394836a2c98f9f790403e1f35a29fc9a",
+    "embedding_diagnostic.png": "0543d1e560a37e53b9d1e01acdce11529379293d92064ccf21df8211fc5e12a4",
+    "embedding_diagnostic_metadata.json": "02fa75928cdf1cea1968d508831fe71687232a85271951c8e00e6629aba0fc9a",
+    "embedding_diagnostic.svg": "94920dec764f99c1fea9745b8ecdad9c285c77df77fb6ec295727c0d09107203",
+    "embedding_diagnostic.eps": "2c53653c865b56d3b9fef3d57bd09089070033973dc25a20cb58e2d50b9bf689"
+  }
+}

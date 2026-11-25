@@ -1,0 +1,23 @@
+{
+  "protocol": "few_shot_path_attention_folded_date2027_v1",
+  "graphs_sha256": "2fc12201999968c5f2ee3efb4857b27ba7e5d67bf3b49700a8e706edb5da6391",
+  "cktpath_imported": false,
+  "encoder_configurations": 270,
+  "decoder_configurations": 54,
+  "encoder_device": "cpu",
+  "decoder_device": "cuda",
+  "encoder_reference_matches": 270,
+  "decoder_reference_matches": 54,
+  "reference_match": true,
+  "primary_metric_max_absolute_difference": {
+    "retrieval_top1": 0.0,
+    "retrieval_top3": 0.0,
+    "retrieval_mrr": 0.0,
+    "stage_exact": 0.0
+  },
+  "encoder_largest_mismatch": 0,
+  "encoder_mismatches": [],
+  "full_report_sha256": "829725f5d2e8159670361e094dc1181501cd699de114e3b5d6e1d05e044a8e80",
+  "encoder_max_absolute_difference": 0.0,
+  "decoder_max_absolute_difference": 0
+}

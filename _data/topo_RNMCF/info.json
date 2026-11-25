@@ -1,0 +1,206 @@
+{
+    "model_name": "RNMCF",
+    "source_model": "/home/leemzmz/VibeCoding/path/_macromodel/3stg/RNMCF.json",
+    "num_stages": 3,
+    "num_main_path_units": 4,
+    "num_compensations": 3,
+    "macro_model": {
+        "stage": {
+            "main": 4,
+            "groups": [
+                [
+                    1
+                ],
+                [
+                    2
+                ],
+                [
+                    3,
+                    4
+                ]
+            ],
+            "diff": [
+                1
+            ]
+        },
+        "compensation": [
+            {
+                "i": 4,
+                "o": 1,
+                "type": "MC"
+            },
+            {
+                "i": 2,
+                "o": 1,
+                "type": "MC"
+            },
+            {
+                "i": 1,
+                "o": 4,
+                "type": "FF"
+            }
+        ]
+    },
+    "growth_config": {
+        "min_tail_devices": 1,
+        "max_tail_devices": 3,
+        "max_series_devices": 2,
+        "max_mos_per_vpath": 4,
+        "match_mirror_vpath_stack": true
+    },
+    "generated_at": "2026-08-26T13:39:15.738264",
+    "requested_variants": 0,
+    "generated_variants": 0,
+    "requested_core_variants": 20,
+    "generated_core_variants": 20,
+    "peripheral_variants_per_core": 0,
+    "attempt_count": 20,
+    "peripheral_attempt_count": 0,
+    "max_attempts": 400,
+    "path_validation": true,
+    "bias_addon_mode": "none",
+    "peripheral_coverage_mode": "none",
+    "core_variants": [
+        {
+            "index": 0,
+            "seed": 42,
+            "filename": "core_00.cir",
+            "fingerprint": "fc738c617721afffd2edf2c52ffd169b1c384f6df339edae37837f3918559070",
+            "variants": []
+        },
+        {
+            "index": 1,
+            "seed": 59,
+            "filename": "core_01.cir",
+            "fingerprint": "877d711c37ad1b4c1d64f9f185fa17e327224a53538fc04fe59a38518ece7799",
+            "variants": []
+        },
+        {
+            "index": 2,
+            "seed": 76,
+            "filename": "core_02.cir",
+            "fingerprint": "3f40db270ee6d72f1495b26675b2a8b6b8b531ef1f487e8e1973981ce2fc06f9",
+            "variants": []
+        },
+        {
+            "index": 3,
+            "seed": 93,
+            "filename": "core_03.cir",
+            "fingerprint": "07f916f4b84fad80219a151775293dad3331fe8d79cbef2578e787c82d382ba3",
+            "variants": []
+        },
+        {
+            "index": 4,
+            "seed": 110,
+            "filename": "core_04.cir",
+            "fingerprint": "a53421940bfea491221c6433beb95e8e74890dc49503cba86f1f956d526c20b4",
+            "variants": []
+        },
+        {
+            "index": 5,
+            "seed": 127,
+            "filename": "core_05.cir",
+            "fingerprint": "e9354f696388d529fbb28cf7d2e6c77edd85eef003f902337472ed7832738b21",
+            "variants": []
+        },
+        {
+            "index": 6,
+            "seed": 144,
+            "filename": "core_06.cir",
+            "fingerprint": "97dc10e43e985d9c20814e00c00253a2336d945bfb33cec1cab8275380dc20ab",
+            "variants": []
+        },
+        {
+            "index": 7,
+            "seed": 161,
+            "filename": "core_07.cir",
+            "fingerprint": "1d1fae4704e5dd7f44ec2e4c8fff011912773c934f21e8454e6f86faa7754be6",
+            "variants": []
+        },
+        {
+            "index": 8,
+            "seed": 178,
+            "filename": "core_08.cir",
+            "fingerprint": "c76f0c810fa8e777d25e27d7f470d79746a2da865c8a45d5a9771687184cc046",
+            "variants": []
+        },
+        {
+            "index": 9,
+            "seed": 195,
+            "filename": "core_09.cir",
+            "fingerprint": "5d47342313ef22137d323d6c692e85f8a816713014047520a0dc71c8dd660a91",
+            "variants": []
+        },
+        {
+            "index": 10,
+            "seed": 212,
+            "filename": "core_10.cir",
+            "fingerprint": "385d6bdd43942e64ec4ee0ac9ba9bc592c88f87fd43c2cb99531735680a2ca23",
+            "variants": []
+        },
+        {
+            "index": 11,
+            "seed": 229,
+            "filename": "core_11.cir",
+            "fingerprint": "b7da8bf7f83fde1e2b806675d571d686537127492f53794a5d085d74dfe19c1e",
+            "variants": []
+        },
+        {
+            "index": 12,
+            "seed": 246,
+            "filename": "core_12.cir",
+            "fingerprint": "88266f6885639f7801df5f22981e1a7bf1bb12f9ca52f96da42350b526ff01e8",
+            "variants": []
+        },
+        {
+            "index": 13,
+            "seed": 263,
+            "filename": "core_13.cir",
+            "fingerprint": "2b70208cb52c99132a17c2d705166a6cdafb5791062bfbaf2d0feb7e67787ac4",
+            "variants": []
+        },
+        {
+            "index": 14,
+            "seed": 280,
+            "filename": "core_14.cir",
+            "fingerprint": "d0faf7e1ddc67dc883c12154dc25a0e0eca00ad0685f1760fbc52018f24cf1ac",
+            "variants": []
+        },
+        {
+            "index": 15,
+            "seed": 297,
+            "filename": "core_15.cir",
+            "fingerprint": "a1ea8c5e84ac7202d3c3173cf5692ef0471b145ce67f9d46e7efb2ba407e532f",
+            "variants": []
+        },
+        {
+            "index": 16,
+            "seed": 314,
+            "filename": "core_16.cir",
+            "fingerprint": "b3aa41a590b78b54169d6cb42b9be112ff5c6882eb9afbca168a55e4c32d79f0",
+            "variants": []
+        },
+        {
+            "index": 17,
+            "seed": 331,
+            "filename": "core_17.cir",
+            "fingerprint": "e90256bf67dbc5c126c58dcd90c4e6b51571358f5dfb81f2389f259acab882fb",
+            "variants": []
+        },
+        {
+            "index": 18,
+            "seed": 348,
+            "filename": "core_18.cir",
+            "fingerprint": "17307034b4ac585ea689616d47127c23bfe5532c23fc4d0ce2ba4a00322402ad",
+            "variants": []
+        },
+        {
+            "index": 19,
+            "seed": 365,
+            "filename": "core_19.cir",
+            "fingerprint": "9edeb2ced032f72e3e2b5c298d48acd4880465df0186cf4f97f2c9a840bda0f2",
+            "variants": []
+        }
+    ],
+    "variants": []
+}

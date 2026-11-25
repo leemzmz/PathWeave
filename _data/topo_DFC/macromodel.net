@@ -1,0 +1,20 @@
+*auto-generated macro netlist
+*Stage #1
+Gm1 1 0 100 0 1e-4
+Ro1 1 0 1e6
+Co1 1 0 1e-14
+
+*Stage #2
+Gm2 2 0 1 0 1e-4
+Ro2 2 0 1e6
+CL 2 0 1e-11
+
+*DFC
+Gma1 1000 0 2 0 1e-4
+Ca1 1000 2 1e-12
+Ra1 1000 0 1e4
+
+*Analysis
+V 100 0 1.0 AC 1
+.sac V(2, 0) dec 20 1e1 1e10
+.end

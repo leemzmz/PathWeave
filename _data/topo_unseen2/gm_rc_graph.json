@@ -1,0 +1,254 @@
+{
+  "nodes": [
+    {
+      "id": "boundary_0",
+      "kind": "boundary",
+      "boundary": 0,
+      "roles": [
+        "input-pin"
+      ]
+    },
+    {
+      "id": "boundary_1",
+      "kind": "boundary",
+      "boundary": 1,
+      "roles": [
+        "main-boundary",
+        "stage-output"
+      ],
+      "stage": 1
+    },
+    {
+      "id": "boundary_2",
+      "kind": "boundary",
+      "boundary": 2,
+      "roles": [
+        "main-boundary",
+        "stage-output"
+      ],
+      "stage": 2
+    },
+    {
+      "id": "boundary_3",
+      "kind": "boundary",
+      "boundary": 3,
+      "roles": [
+        "main-boundary"
+      ]
+    },
+    {
+      "id": "boundary_4",
+      "kind": "boundary",
+      "boundary": 4,
+      "roles": [
+        "main-boundary",
+        "stage-output",
+        "output-pin"
+      ],
+      "stage": 3
+    },
+    {
+      "id": "gnd",
+      "kind": "ground",
+      "roles": [
+        "ground"
+      ]
+    },
+    {
+      "id": "comp_0_node_0",
+      "kind": "internal",
+      "path": 0,
+      "order": 0
+    },
+    {
+      "id": "comp_1_node_0",
+      "kind": "internal",
+      "path": 1,
+      "order": 0
+    },
+    {
+      "id": "comp_2_node_0",
+      "kind": "internal",
+      "path": 2,
+      "order": 0
+    }
+  ],
+  "devices": [
+    {
+      "id": "main_gm_1",
+      "kind": "Gm",
+      "role": "main",
+      "unit": 1,
+      "stage": 1,
+      "differential": true
+    },
+    {
+      "id": "main_gm_2",
+      "kind": "Gm",
+      "role": "main",
+      "unit": 2,
+      "stage": 2,
+      "differential": false
+    },
+    {
+      "id": "main_gm_3",
+      "kind": "Gm",
+      "role": "main",
+      "unit": 3,
+      "stage": 3,
+      "differential": false
+    },
+    {
+      "id": "main_gm_4",
+      "kind": "Gm",
+      "role": "main",
+      "unit": 4,
+      "stage": 3,
+      "differential": false
+    },
+    {
+      "id": "comp_0_0_r",
+      "kind": "R",
+      "role": "compensation",
+      "path": 0,
+      "order": 0
+    },
+    {
+      "id": "comp_0_1_c",
+      "kind": "C",
+      "role": "compensation",
+      "path": 0,
+      "order": 1
+    },
+    {
+      "id": "comp_1_0_c",
+      "kind": "C",
+      "role": "compensation",
+      "path": 1,
+      "order": 0
+    },
+    {
+      "id": "comp_1_1_r",
+      "kind": "R",
+      "role": "compensation",
+      "path": 1,
+      "order": 1
+    },
+    {
+      "id": "comp_2_0_gm",
+      "kind": "Gm",
+      "role": "compensation",
+      "path": 2,
+      "order": 0
+    },
+    {
+      "id": "comp_2_1_c",
+      "kind": "C",
+      "role": "compensation",
+      "path": 2,
+      "order": 1
+    }
+  ],
+  "edges": [
+    {
+      "node": "boundary_0",
+      "device": "main_gm_1",
+      "terminal": "input"
+    },
+    {
+      "node": "boundary_1",
+      "device": "main_gm_1",
+      "terminal": "output"
+    },
+    {
+      "node": "boundary_1",
+      "device": "main_gm_2",
+      "terminal": "input"
+    },
+    {
+      "node": "boundary_2",
+      "device": "main_gm_2",
+      "terminal": "output"
+    },
+    {
+      "node": "boundary_2",
+      "device": "main_gm_3",
+      "terminal": "input"
+    },
+    {
+      "node": "boundary_3",
+      "device": "main_gm_3",
+      "terminal": "output"
+    },
+    {
+      "node": "boundary_3",
+      "device": "main_gm_4",
+      "terminal": "input"
+    },
+    {
+      "node": "boundary_4",
+      "device": "main_gm_4",
+      "terminal": "output"
+    },
+    {
+      "node": "boundary_2",
+      "device": "comp_0_0_r",
+      "terminal": "a"
+    },
+    {
+      "node": "comp_0_node_0",
+      "device": "comp_0_0_r",
+      "terminal": "b"
+    },
+    {
+      "node": "comp_0_node_0",
+      "device": "comp_0_1_c",
+      "terminal": "a"
+    },
+    {
+      "node": "gnd",
+      "device": "comp_0_1_c",
+      "terminal": "b"
+    },
+    {
+      "node": "boundary_3",
+      "device": "comp_1_0_c",
+      "terminal": "a"
+    },
+    {
+      "node": "comp_1_node_0",
+      "device": "comp_1_0_c",
+      "terminal": "b"
+    },
+    {
+      "node": "comp_1_node_0",
+      "device": "comp_1_1_r",
+      "terminal": "a"
+    },
+    {
+      "node": "boundary_1",
+      "device": "comp_1_1_r",
+      "terminal": "b"
+    },
+    {
+      "node": "boundary_1",
+      "device": "comp_2_0_gm",
+      "terminal": "input"
+    },
+    {
+      "node": "comp_2_node_0",
+      "device": "comp_2_0_gm",
+      "terminal": "output"
+    },
+    {
+      "node": "comp_2_node_0",
+      "device": "comp_2_1_c",
+      "terminal": "a"
+    },
+    {
+      "node": "boundary_3",
+      "device": "comp_2_1_c",
+      "terminal": "b"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "protocol": "few_shot_path_attention_v1",
+  "graphs_sha256": "5dba4b70234068e1ed78075c6347bfc3e88247045ed9398970b1698285457eae",
+  "cktpath_imported": false,
+  "encoder_configurations": 270,
+  "decoder_configurations": 54,
+  "encoder_device": "cpu",
+  "decoder_device": "cuda",
+  "encoder_reference_matches": 256,
+  "decoder_reference_matches": 54,
+  "reference_match": false,
+  "primary_metric_max_absolute_difference": {
+    "retrieval_top1": 0.0,
+    "retrieval_top3": 0.0,
+    "retrieval_mrr": 0.0,
+    "stage_exact": 0.0
+  },
+  "encoder_largest_mismatch": 2.674309671069075e-05,
+  "encoder_mismatches": [
+    {
+      "seed": 42,
+      "shot": 2,
+      "backbone": "graphsage",
+      "backend": "graph_vpath_attention",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6251786431045137,
+          "actual": 0.6251674203636938,
+          "absolute_difference": 1.1222740819882837e-05
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "shot": 2,
+      "backbone": "gat",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6165977150777939,
+          "actual": 0.6166077813044746,
+          "absolute_difference": 1.0066226680649493e-05
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "shot": 2,
+      "backbone": "gat",
+      "backend": "graph_vpath_attention",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6363087501086004,
+          "actual": 0.6362874125306066,
+          "absolute_difference": 2.1337577993829626e-05
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "shot": 2,
+      "backbone": "gat",
+      "backend": "graph_path_attention",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6550326333783649,
+          "actual": 0.6550204406526415,
+          "absolute_difference": 1.219272572339225e-05
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "shot": 2,
+      "backbone": "gin",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6032214904544296,
+          "actual": 0.6032433719573176,
+          "absolute_difference": 2.1881502887954873e-05
+        }
+      ]
+    },
+    {
+      "seed": 205,
+      "shot": 2,
+      "backbone": "graphsage",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.717300715775803,
+          "actual": 0.7173112456134281,
+          "absolute_difference": 1.0529837625061766e-05
+        }
+      ]
+    },
+    {
+      "seed": 205,
+      "shot": 2,
+      "backbone": "graphsage",
+      "backend": "graph_vpath_attention",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.7527561237044542,
+          "actual": 0.7527685067765375,
+          "absolute_difference": 1.2383072083288482e-05
+        }
+      ]
+    },
+    {
+      "seed": 205,
+      "shot": 2,
+      "backbone": "gat",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6756708879856359,
+          "actual": 0.6756919699580498,
+          "absolute_difference": 2.1081972413905525e-05
+        }
+      ]
+    },
+    {
+      "seed": 205,
+      "shot": 2,
+      "backbone": "gin",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.709382407302413,
+          "actual": 0.7093988835453758,
+          "absolute_difference": 1.6476242962859544e-05
+        }
+      ]
+    },
+    {
+      "seed": 316,
+      "shot": 2,
+      "backbone": "gat",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6522694440584298,
+          "actual": 0.6522961871551405,
+          "absolute_difference": 2.674309671069075e-05
+        }
+      ]
+    },
+    {
+      "seed": 327,
+      "shot": 2,
+      "backbone": "graphsage",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6599641280749245,
+          "actual": 0.6599793621811388,
+          "absolute_difference": 1.5234106214290222e-05
+        }
+      ]
+    },
+    {
+      "seed": 327,
+      "shot": 2,
+      "backbone": "gat",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.659580765143829,
+          "actual": 0.659557934671264,
+          "absolute_difference": 2.2830472565016358e-05
+        }
+      ]
+    },
+    {
+      "seed": 330,
+      "shot": 2,
+      "backbone": "graphsage",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.6519907896897601,
+          "actual": 0.6519682361537844,
+          "absolute_difference": 2.2553535975688987e-05
+        }
+      ]
+    },
+    {
+      "seed": 330,
+      "shot": 4,
+      "backbone": "graphsage",
+      "backend": "graph_netlist",
+      "differences": [
+        {
+          "metric": "encoder_test.target_manifold_spearman",
+          "reference": 0.7684018066338903,
+          "actual": 0.7684122623803401,
+          "absolute_difference": 1.0455746449755665e-05
+        }
+      ]
+    }
+  ],
+  "full_report_sha256": "a780244a8fb0c3c25cab2140c912d6cb454ec42c37d7de48e02643e1890b45d9",
+  "encoder_max_absolute_difference": 2.674309671069075e-05,
+  "decoder_max_absolute_difference": 0
+}

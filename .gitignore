@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+*.tmp
+*:Zone.Identifier
+
+# Local environments and editor state
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.coverage
+htmlcov/
+# Fresh runs are separate from the published experiment archives.
+_experiments/
+
+# Generator console output and process state are not release artifacts.
+*.log
+*.pid

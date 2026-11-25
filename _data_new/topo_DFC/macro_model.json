@@ -1,0 +1,23 @@
+{
+    "stage": {
+        "main": 2,
+        "groups": [
+            [
+                1
+            ],
+            [
+                2
+            ]
+        ],
+        "diff": [
+            1
+        ]
+    },
+    "compensation": [
+        {
+            "i": 2,
+            "o": 2,
+            "type": "DFC"
+        }
+    ]
+}

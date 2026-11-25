@@ -1,0 +1,22 @@
+*auto-generated subcircuit netlist (from TopoGen)
+.SUBCKT CKTCASE vref vfb vout b0 b1 b2 b3 vdd gnd
+*.PININFO vref:I vfb:I vout:O b0:B b1:B b2:B b3:B vdd:B gnd:B
+
+Mp1 p1 vref n_tail_1 vdd pmos W=w_Mp1 L=l_Mp1
+Mp2 n_diff_2 vfb n_tail_1 vdd pmos W=w_Mp2 L=l_Mp2
+Mtail1 n_tail_1 b0 vdd vdd pmos W=w_Mtail1 L=l_Mtail1
+MloadCas1 n_diff_2 b1 n_load_3 gnd nmos W=w_MloadCas1 L=l_MloadCas1
+MloadCas2 p1 b1 n_load_4 gnd nmos W=w_MloadCas2 L=l_MloadCas2
+MloadRef1 n_load_3 n_load_3 gnd gnd nmos W=w_MloadRef1 L=l_MloadRef1
+MloadMirror1 n_load_4 n_load_3 gnd gnd nmos W=w_MloadMirror1 L=l_MloadMirror1
+Mn1 n_series_5 p1 gnd gnd nmos W=w_Mn1 L=l_Mn1
+Mn2 p2 b2 n_series_5 gnd nmos W=w_Mn2 L=l_Mn2
+Mp3 p2 b3 vdd vdd pmos W=w_Mp3 L=l_Mp3
+Mpass1 vout p2 vdd vdd pmos W=w_Mpass1 L=l_Mpass1
+Mgf1 vout vout vfb gnd nmos W=w_Mgf1 L=l_Mgf1
+Mgf2 vfb vfb gnd gnd nmos W=w_Mgf2 L=l_Mgf2
+
+Rc1 p2 n_nr_6 r=r_Rc1
+Cc1 n_nr_6 p1 c=c_Cc1
+CL vout gnd c=c_CL
+.ENDS CKTCASE

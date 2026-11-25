@@ -1,0 +1,5 @@
+# Python 3.11；按目标机器选择 PyTorch CPU/CUDA 构建。
+torch==2.11.0
+torch-geometric==2.7.0
+numpy==2.4.4
+networkx==3.6.1

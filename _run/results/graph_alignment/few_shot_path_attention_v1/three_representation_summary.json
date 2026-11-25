@@ -1,0 +1,580 @@
+{
+  "audit": {
+    "205": {
+      "encoder_result_files": 45,
+      "task_decoder_optimizer_steps": 3000,
+      "task_decoder_result_files": 9
+    },
+    "316": {
+      "encoder_result_files": 45,
+      "task_decoder_optimizer_steps": 3000,
+      "task_decoder_result_files": 9
+    },
+    "327": {
+      "encoder_result_files": 45,
+      "task_decoder_optimizer_steps": 3000,
+      "task_decoder_result_files": 9
+    },
+    "330": {
+      "encoder_result_files": 45,
+      "task_decoder_optimizer_steps": 3000,
+      "task_decoder_result_files": 9
+    },
+    "42": {
+      "encoder_result_files": 45,
+      "task_decoder_optimizer_steps": 3000,
+      "task_decoder_result_files": 9
+    },
+    "501": {
+      "encoder_result_files": 45,
+      "task_decoder_optimizer_steps": 3000,
+      "task_decoder_result_files": 9
+    }
+  },
+  "backbones": [
+    "graphsage",
+    "gat",
+    "gin"
+  ],
+  "backends": [
+    "graph_netlist",
+    "graph_vpath_attention",
+    "graph_path_attention"
+  ],
+  "by_backbone": {
+    "gat": {
+      "graph_netlist": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.7229214807157748,
+        "encoder_top1": 0.5834920634920635,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.9318574904778356,
+        "task_graph_exact": 0.7234126984126984,
+        "task_graph_exact_count": 1823,
+        "task_stage_exact": 0.9222222222222223,
+        "task_valid_graph": 0.9599206349206348,
+        "test_prediction_count": 2520
+      },
+      "graph_path_attention": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.8453681075154336,
+        "encoder_top1": 0.7487301587301587,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.961621883101969,
+        "task_graph_exact": 0.8551587301587302,
+        "task_graph_exact_count": 2155,
+        "task_stage_exact": 0.9726190476190476,
+        "task_valid_graph": 0.9746031746031746,
+        "test_prediction_count": 2520
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.7548679417071357,
+        "encoder_top1": 0.6201587301587301,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.9348852774013162,
+        "task_graph_exact": 0.7496031746031746,
+        "task_graph_exact_count": 1889,
+        "task_stage_exact": 0.951984126984127,
+        "task_valid_graph": 0.9623015873015873,
+        "test_prediction_count": 2520
+      }
+    },
+    "gin": {
+      "graph_netlist": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.8224002970917368,
+        "encoder_top1": 0.7197619047619047,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.9662822916162186,
+        "task_graph_exact": 0.8555555555555555,
+        "task_graph_exact_count": 2156,
+        "task_stage_exact": 0.9738095238095238,
+        "task_valid_graph": 0.9785714285714285,
+        "test_prediction_count": 2520
+      },
+      "graph_path_attention": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.8865666654691975,
+        "encoder_top1": 0.811984126984127,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.9845339884730261,
+        "task_graph_exact": 0.915079365079365,
+        "task_graph_exact_count": 2306,
+        "task_stage_exact": 0.9924603174603175,
+        "task_valid_graph": 0.9928571428571429,
+        "test_prediction_count": 2520
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.8578514523994498,
+        "encoder_top1": 0.7707142857142857,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.9805712251742689,
+        "task_graph_exact": 0.8956349206349207,
+        "task_graph_exact_count": 2257,
+        "task_stage_exact": 0.9876984126984127,
+        "task_valid_graph": 0.9900793650793651,
+        "test_prediction_count": 2520
+      }
+    },
+    "graphsage": {
+      "graph_netlist": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.7162776234907001,
+        "encoder_top1": 0.5773809523809523,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.9590042064181585,
+        "task_graph_exact": 0.8115079365079365,
+        "task_graph_exact_count": 2045,
+        "task_stage_exact": 0.9626984126984127,
+        "task_valid_graph": 0.9785714285714286,
+        "test_prediction_count": 2520
+      },
+      "graph_path_attention": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.8672242040980708,
+        "encoder_top1": 0.7824603174603174,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.9658060541541348,
+        "task_graph_exact": 0.846031746031746,
+        "task_graph_exact_count": 2132,
+        "task_stage_exact": 0.9773809523809524,
+        "task_valid_graph": 0.9809523809523809,
+        "test_prediction_count": 2520
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 30,
+        "encoder_configuration_count": 30,
+        "encoder_mrr": 0.8222944355958268,
+        "encoder_top1": 0.7209523809523809,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 6,
+        "task_ged_similarity": 0.922587130956501,
+        "task_graph_exact": 0.7785714285714286,
+        "task_graph_exact_count": 1962,
+        "task_stage_exact": 0.9293650793650794,
+        "task_valid_graph": 0.9404761904761905,
+        "test_prediction_count": 2520
+      }
+    }
+  },
+  "by_shot": {
+    "10": {
+      "graph_netlist": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.8622956239821319,
+        "encoder_top1": 0.7728835978835978,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 18,
+        "task_ged_similarity": 0.952381329504071,
+        "task_graph_exact": 0.7968253968253969,
+        "task_graph_exact_count": 6024,
+        "task_stage_exact": 0.9529100529100529,
+        "task_valid_graph": 0.9723544973544973,
+        "test_prediction_count": 7560
+      },
+      "graph_path_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.9303363567649282,
+        "encoder_top1": 0.8783068783068783,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 18,
+        "task_ged_similarity": 0.9706539752430433,
+        "task_graph_exact": 0.8720899470899471,
+        "task_graph_exact_count": 6593,
+        "task_stage_exact": 0.9808201058201058,
+        "task_valid_graph": 0.9828042328042328,
+        "test_prediction_count": 7560
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.8913134653412431,
+        "encoder_top1": 0.8194444444444444,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 18,
+        "task_ged_similarity": 0.9460145445106953,
+        "task_graph_exact": 0.807936507936508,
+        "task_graph_exact_count": 6108,
+        "task_stage_exact": 0.9563492063492064,
+        "task_valid_graph": 0.9642857142857143,
+        "test_prediction_count": 7560
+      }
+    },
+    "2": {
+      "graph_netlist": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.5301466201363827,
+        "encoder_top1": 0.3431216931216931,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      },
+      "graph_path_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.7156143828687934,
+        "encoder_top1": 0.5615079365079365,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.630038016892524,
+        "encoder_top1": 0.4533068783068783,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      }
+    },
+    "4": {
+      "graph_netlist": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.6984504557668798,
+        "encoder_top1": 0.5415343915343915,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      },
+      "graph_path_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.8458769583763748,
+        "encoder_top1": 0.7427248677248677,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.7828558676847126,
+        "encoder_top1": 0.6558201058201059,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      }
+    },
+    "6": {
+      "graph_netlist": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.8169019663941405,
+        "encoder_top1": 0.7029100529100529,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      },
+      "graph_path_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.9091306059460821,
+        "encoder_top1": 0.8443121693121693,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.8596166006979499,
+        "encoder_top1": 0.7671957671957672,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      }
+    },
+    "8": {
+      "graph_netlist": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.8615376692174845,
+        "encoder_top1": 0.7739417989417989,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      },
+      "graph_path_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.9309733245149912,
+        "encoder_top1": 0.8784391534391535,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      },
+      "graph_vpath_attention": {
+        "configuration_count": 18,
+        "encoder_configuration_count": 18,
+        "encoder_mrr": 0.8945324322209243,
+        "encoder_top1": 0.823941798941799,
+        "target_only_graph_exact": 0.9867724867724867,
+        "task_configuration_count": 0,
+        "task_ged_similarity": null,
+        "task_graph_exact": null,
+        "task_graph_exact_count": 0,
+        "task_stage_exact": null,
+        "task_valid_graph": null,
+        "test_prediction_count": 0
+      }
+    }
+  },
+  "configuration_count": 54,
+  "encoder_configuration_count": 270,
+  "overall": {
+    "graph_netlist": {
+      "configuration_count": 90,
+      "encoder_configuration_count": 90,
+      "encoder_mrr": 0.7538664670994039,
+      "encoder_top1": 0.6268783068783069,
+      "target_only_graph_exact": 0.9867724867724867,
+      "task_configuration_count": 18,
+      "task_ged_similarity": 0.952381329504071,
+      "task_graph_exact": 0.7968253968253969,
+      "task_graph_exact_count": 6024,
+      "task_stage_exact": 0.9529100529100529,
+      "task_valid_graph": 0.9723544973544973,
+      "test_prediction_count": 7560
+    },
+    "graph_path_attention": {
+      "configuration_count": 90,
+      "encoder_configuration_count": 90,
+      "encoder_mrr": 0.8663863256942339,
+      "encoder_top1": 0.781058201058201,
+      "target_only_graph_exact": 0.9867724867724867,
+      "task_configuration_count": 18,
+      "task_ged_similarity": 0.9706539752430433,
+      "task_graph_exact": 0.8720899470899471,
+      "task_graph_exact_count": 6593,
+      "task_stage_exact": 0.9808201058201058,
+      "task_valid_graph": 0.9828042328042328,
+      "test_prediction_count": 7560
+    },
+    "graph_vpath_attention": {
+      "configuration_count": 90,
+      "encoder_configuration_count": 90,
+      "encoder_mrr": 0.8116712765674707,
+      "encoder_top1": 0.703941798941799,
+      "target_only_graph_exact": 0.9867724867724867,
+      "task_configuration_count": 18,
+      "task_ged_similarity": 0.9460145445106953,
+      "task_graph_exact": 0.807936507936508,
+      "task_graph_exact_count": 6108,
+      "task_stage_exact": 0.9563492063492064,
+      "task_valid_graph": 0.9642857142857143,
+      "test_prediction_count": 7560
+    }
+  },
+  "paired_task_graph_exact": [
+    {
+      "configuration_losses": 13,
+      "configuration_ties": 0,
+      "configuration_wins": 5,
+      "lhs": "graph_vpath_attention",
+      "mean_delta": 0.011111111111111108,
+      "metric": "task_graph_exact",
+      "rhs": "graph_netlist",
+      "seed_deltas": {
+        "205": 0.026984126984127,
+        "316": -0.013492063492063519,
+        "327": -0.045238095238095265,
+        "330": 0.13888888888888895,
+        "42": -0.0301587301587302,
+        "501": -0.010317460317460317
+      },
+      "seed_level_t95_ci": [
+        -0.05933310949591402,
+        0.08155533171813624
+      ]
+    },
+    {
+      "configuration_losses": 1,
+      "configuration_ties": 0,
+      "configuration_wins": 17,
+      "lhs": "graph_path_attention",
+      "mean_delta": 0.06415343915343914,
+      "metric": "task_graph_exact",
+      "rhs": "graph_vpath_attention",
+      "seed_deltas": {
+        "205": 0.07619047619047614,
+        "316": 0.009523809523809526,
+        "327": 0.10793650793650796,
+        "330": 0.05873015873015871,
+        "42": 0.076984126984127,
+        "501": 0.055555555555555504
+      },
+      "seed_level_t95_ci": [
+        0.029934965061695996,
+        0.0983719132451823
+      ]
+    },
+    {
+      "configuration_losses": 2,
+      "configuration_ties": 0,
+      "configuration_wins": 16,
+      "lhs": "graph_path_attention",
+      "mean_delta": 0.07526455026455026,
+      "metric": "task_graph_exact",
+      "rhs": "graph_netlist",
+      "seed_deltas": {
+        "205": 0.10317460317460314,
+        "316": -0.0039682539682539915,
+        "327": 0.0626984126984127,
+        "330": 0.19761904761904767,
+        "42": 0.046825396825396805,
+        "501": 0.04523809523809519
+      },
+      "seed_level_t95_ci": [
+        0.0027038538212562496,
+        0.14782524670784425
+      ]
+    }
+  ],
+  "seeds": [
+    42,
+    205,
+    316,
+    327,
+    330,
+    501
+  ],
+  "shots": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "target_side": {
+    "ged_similarity": 0.9983580579941929,
+    "graph_exact": 0.9841269841269841,
+    "graph_exact_count": 248,
+    "per_seed": {
+      "205": {
+        "graph_exact": 0.9867724867724869,
+        "graph_exact_count": 41,
+        "sample_count": 42.0,
+        "stage_exact": 1.0,
+        "valid_graph": 1.0
+      },
+      "316": {
+        "graph_exact": 0.9814814814814815,
+        "graph_exact_count": 41,
+        "sample_count": 42.0,
+        "stage_exact": 1.0,
+        "valid_graph": 1.0
+      },
+      "327": {
+        "graph_exact": 0.9947089947089948,
+        "graph_exact_count": 42,
+        "sample_count": 42.0,
+        "stage_exact": 1.0,
+        "valid_graph": 1.0
+      },
+      "330": {
+        "graph_exact": 0.9603174603174602,
+        "graph_exact_count": 40,
+        "sample_count": 42.0,
+        "stage_exact": 0.9947089947089948,
+        "valid_graph": 0.9973544973544973
+      },
+      "42": {
+        "graph_exact": 1.0,
+        "graph_exact_count": 42,
+        "sample_count": 42.0,
+        "stage_exact": 1.0,
+        "valid_graph": 1.0
+      },
+      "501": {
+        "graph_exact": 0.9973544973544973,
+        "graph_exact_count": 42,
+        "sample_count": 42.0,
+        "stage_exact": 1.0,
+        "valid_graph": 1.0
+      }
+    },
+    "sample_count": 252.0,
+    "stage_exact": 0.9991181657848325,
+    "valid_graph": 0.9995590828924162
+  },
+  "task_configuration_count": 54,
+  "test_samples_per_configuration": 420
+}

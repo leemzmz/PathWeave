@@ -1,0 +1,200 @@
+{
+    "model_name": "ldo5",
+    "source_model": "/home/leemzmz/VibeCoding/path/_macromodel/ldo/ldo5.json",
+    "num_stages": 3,
+    "num_main_path_units": 3,
+    "num_compensations": 2,
+    "macro_model": {
+        "stage": {
+            "main": 3,
+            "groups": [
+                [
+                    1
+                ],
+                [
+                    2
+                ],
+                [
+                    3
+                ]
+            ],
+            "diff": [
+                1
+            ]
+        },
+        "compensation": [
+            {
+                "i": 1,
+                "o": 2,
+                "type": "ACB"
+            },
+            {
+                "i": 3,
+                "o": 0,
+                "type": "global"
+            }
+        ]
+    },
+    "growth_config": {
+        "min_tail_devices": 1,
+        "max_tail_devices": 3,
+        "max_series_devices": 2,
+        "max_mos_per_vpath": 4,
+        "match_mirror_vpath_stack": true
+    },
+    "generated_at": "2026-08-26T13:39:16.928170",
+    "requested_variants": 0,
+    "generated_variants": 0,
+    "requested_core_variants": 20,
+    "generated_core_variants": 20,
+    "peripheral_variants_per_core": 0,
+    "attempt_count": 21,
+    "peripheral_attempt_count": 0,
+    "max_attempts": 400,
+    "path_validation": true,
+    "bias_addon_mode": "none",
+    "peripheral_coverage_mode": "none",
+    "core_variants": [
+        {
+            "index": 0,
+            "seed": 42,
+            "filename": "core_00.cir",
+            "fingerprint": "9a0384aaa0ddaacdd792805145270dcf10e2e098a02bda976e8eede95a978c14",
+            "variants": []
+        },
+        {
+            "index": 1,
+            "seed": 59,
+            "filename": "core_01.cir",
+            "fingerprint": "2beb83b8ee7b99f966d79f7f568bc06c85d987cba17d81541ca85ef5c8b25556",
+            "variants": []
+        },
+        {
+            "index": 2,
+            "seed": 76,
+            "filename": "core_02.cir",
+            "fingerprint": "560b57381cc44103d285eaf987b7ada8899086ebae3167fb8c2ae2da738a206a",
+            "variants": []
+        },
+        {
+            "index": 3,
+            "seed": 93,
+            "filename": "core_03.cir",
+            "fingerprint": "0d97c8431cc4bd1ee220b586514416409d844fcdf880bc320d6f7ad6ac943a05",
+            "variants": []
+        },
+        {
+            "index": 4,
+            "seed": 110,
+            "filename": "core_04.cir",
+            "fingerprint": "0ac67d375eaf6c1e0d94aaf9fd5399c63d50312a86b6eae04722952bd0026f37",
+            "variants": []
+        },
+        {
+            "index": 5,
+            "seed": 127,
+            "filename": "core_05.cir",
+            "fingerprint": "5a48c62bf6e5e72883b98d2e5cb71b18d1df1593931e7b76282e1cd07a754a17",
+            "variants": []
+        },
+        {
+            "index": 6,
+            "seed": 144,
+            "filename": "core_06.cir",
+            "fingerprint": "a20cbe2834860897a5087f2fdfcf4bea10953fe247afb0052654e0ba402d88ea",
+            "variants": []
+        },
+        {
+            "index": 7,
+            "seed": 161,
+            "filename": "core_07.cir",
+            "fingerprint": "9fefb55ec3b7aeda064ddc66a8dfc320b044e38ce47860e9acac3c2dbb3c139b",
+            "variants": []
+        },
+        {
+            "index": 8,
+            "seed": 178,
+            "filename": "core_08.cir",
+            "fingerprint": "7f4536f2e5dfe0373d7410c70b181e8c3bd676bbf05f4ce498e5bca0b8d711f7",
+            "variants": []
+        },
+        {
+            "index": 9,
+            "seed": 195,
+            "filename": "core_09.cir",
+            "fingerprint": "2621d52a6ce3ef152d64822012af09ed9014fb9b80d7e0651240cddfe3235c78",
+            "variants": []
+        },
+        {
+            "index": 10,
+            "seed": 212,
+            "filename": "core_10.cir",
+            "fingerprint": "8273773a7daee6dba02f7ead27ce9dde291564b815cf5e295a0e42fa5621cd8b",
+            "variants": []
+        },
+        {
+            "index": 11,
+            "seed": 229,
+            "filename": "core_11.cir",
+            "fingerprint": "85b5f7e341b6cab4eeb4c9b9c57d8324853a339fd0a4427fd0f99adc155df784",
+            "variants": []
+        },
+        {
+            "index": 12,
+            "seed": 246,
+            "filename": "core_12.cir",
+            "fingerprint": "0ac1b85bd043dee10554b68f33ceb418757b9daf6d46b308c1e4cb446954c199",
+            "variants": []
+        },
+        {
+            "index": 13,
+            "seed": 263,
+            "filename": "core_13.cir",
+            "fingerprint": "59ab3a995b1b3d1416512ddb2a2b0d90d8ac6af4c4fe931c0e19b778d73e44d4",
+            "variants": []
+        },
+        {
+            "index": 14,
+            "seed": 280,
+            "filename": "core_14.cir",
+            "fingerprint": "b463f726bf524c572b9448a7692ae5f2c2fbd34fb788636b427350112a85ed2e",
+            "variants": []
+        },
+        {
+            "index": 15,
+            "seed": 297,
+            "filename": "core_15.cir",
+            "fingerprint": "897531a405186e0ae5fb92d97bd3b1227dc4b43040e527ae0f1f8ab60efdc579",
+            "variants": []
+        },
+        {
+            "index": 16,
+            "seed": 314,
+            "filename": "core_16.cir",
+            "fingerprint": "9d4861b6784d3fc2e6c4a4ee407a872fb01012cfcb83db974c4a92732cba50fb",
+            "variants": []
+        },
+        {
+            "index": 17,
+            "seed": 331,
+            "filename": "core_17.cir",
+            "fingerprint": "8de406335f7fd2b329a7c95f235ec33efb7153e7dc7583f58b3f6ada276498ca",
+            "variants": []
+        },
+        {
+            "index": 18,
+            "seed": 348,
+            "filename": "core_18.cir",
+            "fingerprint": "4d96413f04d97055a74c7e0e4504e6e3e94f088550c506b0bbe80f808f5c1560",
+            "variants": []
+        },
+        {
+            "index": 19,
+            "seed": 382,
+            "filename": "core_19.cir",
+            "fingerprint": "d4682c77a8201e6d046080f633760ccf5407791b8e9c81cbb08e349b3e2b7f56",
+            "variants": []
+        }
+    ],
+    "variants": []
+}

@@ -1,0 +1,2873 @@
+{
+  "case_count": 840,
+  "common_test_per_topology": 10,
+  "protocol": "few_shot_path_attention_v1",
+  "seed": 42,
+  "shots": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "topologies": {
+    "topo_ACB": {
+      "test": [
+        "topo_ACB/core_17.cir",
+        "topo_ACB/core_10.cir",
+        "topo_ACB/core_01.cir",
+        "topo_ACB/core_11.cir",
+        "topo_ACB/core_02.cir",
+        "topo_ACB/core_16.cir",
+        "topo_ACB/core_07.cir",
+        "topo_ACB/core_08.cir",
+        "topo_ACB/core_00.cir",
+        "topo_ACB/core_03.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ACB/core_19.cir",
+          "topo_ACB/core_05.cir",
+          "topo_ACB/core_14.cir",
+          "topo_ACB/core_04.cir",
+          "topo_ACB/core_09.cir",
+          "topo_ACB/core_13.cir",
+          "topo_ACB/core_15.cir",
+          "topo_ACB/core_18.cir",
+          "topo_ACB/core_06.cir",
+          "topo_ACB/core_12.cir"
+        ],
+        "2": [
+          "topo_ACB/core_19.cir",
+          "topo_ACB/core_05.cir"
+        ],
+        "4": [
+          "topo_ACB/core_19.cir",
+          "topo_ACB/core_05.cir",
+          "topo_ACB/core_14.cir",
+          "topo_ACB/core_04.cir"
+        ],
+        "6": [
+          "topo_ACB/core_19.cir",
+          "topo_ACB/core_05.cir",
+          "topo_ACB/core_14.cir",
+          "topo_ACB/core_04.cir",
+          "topo_ACB/core_09.cir",
+          "topo_ACB/core_13.cir"
+        ],
+        "8": [
+          "topo_ACB/core_19.cir",
+          "topo_ACB/core_05.cir",
+          "topo_ACB/core_14.cir",
+          "topo_ACB/core_04.cir",
+          "topo_ACB/core_09.cir",
+          "topo_ACB/core_13.cir",
+          "topo_ACB/core_15.cir",
+          "topo_ACB/core_18.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ACB/core_19.cir",
+        "topo_ACB/core_05.cir",
+        "topo_ACB/core_14.cir",
+        "topo_ACB/core_04.cir",
+        "topo_ACB/core_09.cir",
+        "topo_ACB/core_13.cir",
+        "topo_ACB/core_15.cir",
+        "topo_ACB/core_18.cir",
+        "topo_ACB/core_06.cir",
+        "topo_ACB/core_12.cir"
+      ]
+    },
+    "topo_ACBC": {
+      "test": [
+        "topo_ACBC/core_02.cir",
+        "topo_ACBC/core_00.cir",
+        "topo_ACBC/core_04.cir",
+        "topo_ACBC/core_09.cir",
+        "topo_ACBC/core_15.cir",
+        "topo_ACBC/core_07.cir",
+        "topo_ACBC/core_13.cir",
+        "topo_ACBC/core_19.cir",
+        "topo_ACBC/core_06.cir",
+        "topo_ACBC/core_17.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ACBC/core_14.cir",
+          "topo_ACBC/core_08.cir",
+          "topo_ACBC/core_03.cir",
+          "topo_ACBC/core_11.cir",
+          "topo_ACBC/core_10.cir",
+          "topo_ACBC/core_16.cir",
+          "topo_ACBC/core_01.cir",
+          "topo_ACBC/core_12.cir",
+          "topo_ACBC/core_05.cir",
+          "topo_ACBC/core_18.cir"
+        ],
+        "2": [
+          "topo_ACBC/core_14.cir",
+          "topo_ACBC/core_08.cir"
+        ],
+        "4": [
+          "topo_ACBC/core_14.cir",
+          "topo_ACBC/core_08.cir",
+          "topo_ACBC/core_03.cir",
+          "topo_ACBC/core_11.cir"
+        ],
+        "6": [
+          "topo_ACBC/core_14.cir",
+          "topo_ACBC/core_08.cir",
+          "topo_ACBC/core_03.cir",
+          "topo_ACBC/core_11.cir",
+          "topo_ACBC/core_10.cir",
+          "topo_ACBC/core_16.cir"
+        ],
+        "8": [
+          "topo_ACBC/core_14.cir",
+          "topo_ACBC/core_08.cir",
+          "topo_ACBC/core_03.cir",
+          "topo_ACBC/core_11.cir",
+          "topo_ACBC/core_10.cir",
+          "topo_ACBC/core_16.cir",
+          "topo_ACBC/core_01.cir",
+          "topo_ACBC/core_12.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ACBC/core_14.cir",
+        "topo_ACBC/core_08.cir",
+        "topo_ACBC/core_03.cir",
+        "topo_ACBC/core_11.cir",
+        "topo_ACBC/core_10.cir",
+        "topo_ACBC/core_16.cir",
+        "topo_ACBC/core_01.cir",
+        "topo_ACBC/core_12.cir",
+        "topo_ACBC/core_05.cir",
+        "topo_ACBC/core_18.cir"
+      ]
+    },
+    "topo_ACBC2": {
+      "test": [
+        "topo_ACBC2/core_06.cir",
+        "topo_ACBC2/core_15.cir",
+        "topo_ACBC2/core_16.cir",
+        "topo_ACBC2/core_07.cir",
+        "topo_ACBC2/core_17.cir",
+        "topo_ACBC2/core_01.cir",
+        "topo_ACBC2/core_08.cir",
+        "topo_ACBC2/core_18.cir",
+        "topo_ACBC2/core_11.cir",
+        "topo_ACBC2/core_03.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ACBC2/core_09.cir",
+          "topo_ACBC2/core_00.cir",
+          "topo_ACBC2/core_19.cir",
+          "topo_ACBC2/core_02.cir",
+          "topo_ACBC2/core_13.cir",
+          "topo_ACBC2/core_05.cir",
+          "topo_ACBC2/core_10.cir",
+          "topo_ACBC2/core_04.cir",
+          "topo_ACBC2/core_12.cir",
+          "topo_ACBC2/core_14.cir"
+        ],
+        "2": [
+          "topo_ACBC2/core_09.cir",
+          "topo_ACBC2/core_00.cir"
+        ],
+        "4": [
+          "topo_ACBC2/core_09.cir",
+          "topo_ACBC2/core_00.cir",
+          "topo_ACBC2/core_19.cir",
+          "topo_ACBC2/core_02.cir"
+        ],
+        "6": [
+          "topo_ACBC2/core_09.cir",
+          "topo_ACBC2/core_00.cir",
+          "topo_ACBC2/core_19.cir",
+          "topo_ACBC2/core_02.cir",
+          "topo_ACBC2/core_13.cir",
+          "topo_ACBC2/core_05.cir"
+        ],
+        "8": [
+          "topo_ACBC2/core_09.cir",
+          "topo_ACBC2/core_00.cir",
+          "topo_ACBC2/core_19.cir",
+          "topo_ACBC2/core_02.cir",
+          "topo_ACBC2/core_13.cir",
+          "topo_ACBC2/core_05.cir",
+          "topo_ACBC2/core_10.cir",
+          "topo_ACBC2/core_04.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ACBC2/core_09.cir",
+        "topo_ACBC2/core_00.cir",
+        "topo_ACBC2/core_19.cir",
+        "topo_ACBC2/core_02.cir",
+        "topo_ACBC2/core_13.cir",
+        "topo_ACBC2/core_05.cir",
+        "topo_ACBC2/core_10.cir",
+        "topo_ACBC2/core_04.cir",
+        "topo_ACBC2/core_12.cir",
+        "topo_ACBC2/core_14.cir"
+      ]
+    },
+    "topo_AFFC": {
+      "test": [
+        "topo_AFFC/core_04.cir",
+        "topo_AFFC/core_06.cir",
+        "topo_AFFC/core_18.cir",
+        "topo_AFFC/core_03.cir",
+        "topo_AFFC/core_13.cir",
+        "topo_AFFC/core_19.cir",
+        "topo_AFFC/core_09.cir",
+        "topo_AFFC/core_07.cir",
+        "topo_AFFC/core_01.cir",
+        "topo_AFFC/core_02.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_AFFC/core_10.cir",
+          "topo_AFFC/core_00.cir",
+          "topo_AFFC/core_14.cir",
+          "topo_AFFC/core_08.cir",
+          "topo_AFFC/core_12.cir",
+          "topo_AFFC/core_11.cir",
+          "topo_AFFC/core_16.cir",
+          "topo_AFFC/core_15.cir",
+          "topo_AFFC/core_05.cir",
+          "topo_AFFC/core_17.cir"
+        ],
+        "2": [
+          "topo_AFFC/core_10.cir",
+          "topo_AFFC/core_00.cir"
+        ],
+        "4": [
+          "topo_AFFC/core_10.cir",
+          "topo_AFFC/core_00.cir",
+          "topo_AFFC/core_14.cir",
+          "topo_AFFC/core_08.cir"
+        ],
+        "6": [
+          "topo_AFFC/core_10.cir",
+          "topo_AFFC/core_00.cir",
+          "topo_AFFC/core_14.cir",
+          "topo_AFFC/core_08.cir",
+          "topo_AFFC/core_12.cir",
+          "topo_AFFC/core_11.cir"
+        ],
+        "8": [
+          "topo_AFFC/core_10.cir",
+          "topo_AFFC/core_00.cir",
+          "topo_AFFC/core_14.cir",
+          "topo_AFFC/core_08.cir",
+          "topo_AFFC/core_12.cir",
+          "topo_AFFC/core_11.cir",
+          "topo_AFFC/core_16.cir",
+          "topo_AFFC/core_15.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_AFFC/core_10.cir",
+        "topo_AFFC/core_00.cir",
+        "topo_AFFC/core_14.cir",
+        "topo_AFFC/core_08.cir",
+        "topo_AFFC/core_12.cir",
+        "topo_AFFC/core_11.cir",
+        "topo_AFFC/core_16.cir",
+        "topo_AFFC/core_15.cir",
+        "topo_AFFC/core_05.cir",
+        "topo_AFFC/core_17.cir"
+      ]
+    },
+    "topo_CB": {
+      "test": [
+        "topo_CB/core_08.cir",
+        "topo_CB/core_10.cir",
+        "topo_CB/core_04.cir",
+        "topo_CB/core_06.cir",
+        "topo_CB/core_16.cir",
+        "topo_CB/core_18.cir",
+        "topo_CB/core_07.cir",
+        "topo_CB/core_17.cir",
+        "topo_CB/core_05.cir",
+        "topo_CB/core_19.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_CB/core_12.cir",
+          "topo_CB/core_11.cir",
+          "topo_CB/core_13.cir",
+          "topo_CB/core_09.cir",
+          "topo_CB/core_02.cir",
+          "topo_CB/core_14.cir",
+          "topo_CB/core_01.cir",
+          "topo_CB/core_00.cir",
+          "topo_CB/core_15.cir",
+          "topo_CB/core_03.cir"
+        ],
+        "2": [
+          "topo_CB/core_12.cir",
+          "topo_CB/core_11.cir"
+        ],
+        "4": [
+          "topo_CB/core_12.cir",
+          "topo_CB/core_11.cir",
+          "topo_CB/core_13.cir",
+          "topo_CB/core_09.cir"
+        ],
+        "6": [
+          "topo_CB/core_12.cir",
+          "topo_CB/core_11.cir",
+          "topo_CB/core_13.cir",
+          "topo_CB/core_09.cir",
+          "topo_CB/core_02.cir",
+          "topo_CB/core_14.cir"
+        ],
+        "8": [
+          "topo_CB/core_12.cir",
+          "topo_CB/core_11.cir",
+          "topo_CB/core_13.cir",
+          "topo_CB/core_09.cir",
+          "topo_CB/core_02.cir",
+          "topo_CB/core_14.cir",
+          "topo_CB/core_01.cir",
+          "topo_CB/core_00.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_CB/core_12.cir",
+        "topo_CB/core_11.cir",
+        "topo_CB/core_13.cir",
+        "topo_CB/core_09.cir",
+        "topo_CB/core_02.cir",
+        "topo_CB/core_14.cir",
+        "topo_CB/core_01.cir",
+        "topo_CB/core_00.cir",
+        "topo_CB/core_15.cir",
+        "topo_CB/core_03.cir"
+      ]
+    },
+    "topo_CIAC": {
+      "test": [
+        "topo_CIAC/core_04.cir",
+        "topo_CIAC/core_02.cir",
+        "topo_CIAC/core_07.cir",
+        "topo_CIAC/core_17.cir",
+        "topo_CIAC/core_16.cir",
+        "topo_CIAC/core_15.cir",
+        "topo_CIAC/core_19.cir",
+        "topo_CIAC/core_10.cir",
+        "topo_CIAC/core_18.cir",
+        "topo_CIAC/core_06.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_CIAC/core_09.cir",
+          "topo_CIAC/core_00.cir",
+          "topo_CIAC/core_01.cir",
+          "topo_CIAC/core_14.cir",
+          "topo_CIAC/core_08.cir",
+          "topo_CIAC/core_12.cir",
+          "topo_CIAC/core_05.cir",
+          "topo_CIAC/core_13.cir",
+          "topo_CIAC/core_03.cir",
+          "topo_CIAC/core_11.cir"
+        ],
+        "2": [
+          "topo_CIAC/core_09.cir",
+          "topo_CIAC/core_00.cir"
+        ],
+        "4": [
+          "topo_CIAC/core_09.cir",
+          "topo_CIAC/core_00.cir",
+          "topo_CIAC/core_01.cir",
+          "topo_CIAC/core_14.cir"
+        ],
+        "6": [
+          "topo_CIAC/core_09.cir",
+          "topo_CIAC/core_00.cir",
+          "topo_CIAC/core_01.cir",
+          "topo_CIAC/core_14.cir",
+          "topo_CIAC/core_08.cir",
+          "topo_CIAC/core_12.cir"
+        ],
+        "8": [
+          "topo_CIAC/core_09.cir",
+          "topo_CIAC/core_00.cir",
+          "topo_CIAC/core_01.cir",
+          "topo_CIAC/core_14.cir",
+          "topo_CIAC/core_08.cir",
+          "topo_CIAC/core_12.cir",
+          "topo_CIAC/core_05.cir",
+          "topo_CIAC/core_13.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_CIAC/core_09.cir",
+        "topo_CIAC/core_00.cir",
+        "topo_CIAC/core_01.cir",
+        "topo_CIAC/core_14.cir",
+        "topo_CIAC/core_08.cir",
+        "topo_CIAC/core_12.cir",
+        "topo_CIAC/core_05.cir",
+        "topo_CIAC/core_13.cir",
+        "topo_CIAC/core_03.cir",
+        "topo_CIAC/core_11.cir"
+      ]
+    },
+    "topo_DFC": {
+      "test": [
+        "topo_DFC/core_12.cir",
+        "topo_DFC/core_10.cir",
+        "topo_DFC/core_18.cir",
+        "topo_DFC/core_17.cir",
+        "topo_DFC/core_13.cir",
+        "topo_DFC/core_01.cir",
+        "topo_DFC/core_02.cir",
+        "topo_DFC/core_15.cir",
+        "topo_DFC/core_16.cir",
+        "topo_DFC/core_04.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_DFC/core_08.cir",
+          "topo_DFC/core_00.cir",
+          "topo_DFC/core_05.cir",
+          "topo_DFC/core_11.cir",
+          "topo_DFC/core_07.cir",
+          "topo_DFC/core_19.cir",
+          "topo_DFC/core_03.cir",
+          "topo_DFC/core_09.cir",
+          "topo_DFC/core_14.cir",
+          "topo_DFC/core_06.cir"
+        ],
+        "2": [
+          "topo_DFC/core_08.cir",
+          "topo_DFC/core_00.cir"
+        ],
+        "4": [
+          "topo_DFC/core_08.cir",
+          "topo_DFC/core_00.cir",
+          "topo_DFC/core_05.cir",
+          "topo_DFC/core_11.cir"
+        ],
+        "6": [
+          "topo_DFC/core_08.cir",
+          "topo_DFC/core_00.cir",
+          "topo_DFC/core_05.cir",
+          "topo_DFC/core_11.cir",
+          "topo_DFC/core_07.cir",
+          "topo_DFC/core_19.cir"
+        ],
+        "8": [
+          "topo_DFC/core_08.cir",
+          "topo_DFC/core_00.cir",
+          "topo_DFC/core_05.cir",
+          "topo_DFC/core_11.cir",
+          "topo_DFC/core_07.cir",
+          "topo_DFC/core_19.cir",
+          "topo_DFC/core_03.cir",
+          "topo_DFC/core_09.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_DFC/core_08.cir",
+        "topo_DFC/core_00.cir",
+        "topo_DFC/core_05.cir",
+        "topo_DFC/core_11.cir",
+        "topo_DFC/core_07.cir",
+        "topo_DFC/core_19.cir",
+        "topo_DFC/core_03.cir",
+        "topo_DFC/core_09.cir",
+        "topo_DFC/core_14.cir",
+        "topo_DFC/core_06.cir"
+      ]
+    },
+    "topo_DFCFC": {
+      "test": [
+        "topo_DFCFC/core_00.cir",
+        "topo_DFCFC/core_07.cir",
+        "topo_DFCFC/core_02.cir",
+        "topo_DFCFC/core_06.cir",
+        "topo_DFCFC/core_04.cir",
+        "topo_DFCFC/core_19.cir",
+        "topo_DFCFC/core_10.cir",
+        "topo_DFCFC/core_08.cir",
+        "topo_DFCFC/core_17.cir",
+        "topo_DFCFC/core_03.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_DFCFC/core_13.cir",
+          "topo_DFCFC/core_15.cir",
+          "topo_DFCFC/core_05.cir",
+          "topo_DFCFC/core_01.cir",
+          "topo_DFCFC/core_11.cir",
+          "topo_DFCFC/core_16.cir",
+          "topo_DFCFC/core_09.cir",
+          "topo_DFCFC/core_12.cir",
+          "topo_DFCFC/core_18.cir",
+          "topo_DFCFC/core_14.cir"
+        ],
+        "2": [
+          "topo_DFCFC/core_13.cir",
+          "topo_DFCFC/core_15.cir"
+        ],
+        "4": [
+          "topo_DFCFC/core_13.cir",
+          "topo_DFCFC/core_15.cir",
+          "topo_DFCFC/core_05.cir",
+          "topo_DFCFC/core_01.cir"
+        ],
+        "6": [
+          "topo_DFCFC/core_13.cir",
+          "topo_DFCFC/core_15.cir",
+          "topo_DFCFC/core_05.cir",
+          "topo_DFCFC/core_01.cir",
+          "topo_DFCFC/core_11.cir",
+          "topo_DFCFC/core_16.cir"
+        ],
+        "8": [
+          "topo_DFCFC/core_13.cir",
+          "topo_DFCFC/core_15.cir",
+          "topo_DFCFC/core_05.cir",
+          "topo_DFCFC/core_01.cir",
+          "topo_DFCFC/core_11.cir",
+          "topo_DFCFC/core_16.cir",
+          "topo_DFCFC/core_09.cir",
+          "topo_DFCFC/core_12.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_DFCFC/core_13.cir",
+        "topo_DFCFC/core_15.cir",
+        "topo_DFCFC/core_05.cir",
+        "topo_DFCFC/core_01.cir",
+        "topo_DFCFC/core_11.cir",
+        "topo_DFCFC/core_16.cir",
+        "topo_DFCFC/core_09.cir",
+        "topo_DFCFC/core_12.cir",
+        "topo_DFCFC/core_18.cir",
+        "topo_DFCFC/core_14.cir"
+      ]
+    },
+    "topo_DFCFC2": {
+      "test": [
+        "topo_DFCFC2/core_04.cir",
+        "topo_DFCFC2/core_19.cir",
+        "topo_DFCFC2/core_01.cir",
+        "topo_DFCFC2/core_18.cir",
+        "topo_DFCFC2/core_07.cir",
+        "topo_DFCFC2/core_10.cir",
+        "topo_DFCFC2/core_00.cir",
+        "topo_DFCFC2/core_16.cir",
+        "topo_DFCFC2/core_17.cir",
+        "topo_DFCFC2/core_05.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_DFCFC2/core_12.cir",
+          "topo_DFCFC2/core_02.cir",
+          "topo_DFCFC2/core_06.cir",
+          "topo_DFCFC2/core_14.cir",
+          "topo_DFCFC2/core_11.cir",
+          "topo_DFCFC2/core_08.cir",
+          "topo_DFCFC2/core_15.cir",
+          "topo_DFCFC2/core_09.cir",
+          "topo_DFCFC2/core_13.cir",
+          "topo_DFCFC2/core_03.cir"
+        ],
+        "2": [
+          "topo_DFCFC2/core_12.cir",
+          "topo_DFCFC2/core_02.cir"
+        ],
+        "4": [
+          "topo_DFCFC2/core_12.cir",
+          "topo_DFCFC2/core_02.cir",
+          "topo_DFCFC2/core_06.cir",
+          "topo_DFCFC2/core_14.cir"
+        ],
+        "6": [
+          "topo_DFCFC2/core_12.cir",
+          "topo_DFCFC2/core_02.cir",
+          "topo_DFCFC2/core_06.cir",
+          "topo_DFCFC2/core_14.cir",
+          "topo_DFCFC2/core_11.cir",
+          "topo_DFCFC2/core_08.cir"
+        ],
+        "8": [
+          "topo_DFCFC2/core_12.cir",
+          "topo_DFCFC2/core_02.cir",
+          "topo_DFCFC2/core_06.cir",
+          "topo_DFCFC2/core_14.cir",
+          "topo_DFCFC2/core_11.cir",
+          "topo_DFCFC2/core_08.cir",
+          "topo_DFCFC2/core_15.cir",
+          "topo_DFCFC2/core_09.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_DFCFC2/core_12.cir",
+        "topo_DFCFC2/core_02.cir",
+        "topo_DFCFC2/core_06.cir",
+        "topo_DFCFC2/core_14.cir",
+        "topo_DFCFC2/core_11.cir",
+        "topo_DFCFC2/core_08.cir",
+        "topo_DFCFC2/core_15.cir",
+        "topo_DFCFC2/core_09.cir",
+        "topo_DFCFC2/core_13.cir",
+        "topo_DFCFC2/core_03.cir"
+      ]
+    },
+    "topo_DFCFC3": {
+      "test": [
+        "topo_DFCFC3/core_03.cir",
+        "topo_DFCFC3/core_06.cir",
+        "topo_DFCFC3/core_09.cir",
+        "topo_DFCFC3/core_13.cir",
+        "topo_DFCFC3/core_18.cir",
+        "topo_DFCFC3/core_08.cir",
+        "topo_DFCFC3/core_05.cir",
+        "topo_DFCFC3/core_17.cir",
+        "topo_DFCFC3/core_15.cir",
+        "topo_DFCFC3/core_04.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_DFCFC3/core_00.cir",
+          "topo_DFCFC3/core_01.cir",
+          "topo_DFCFC3/core_07.cir",
+          "topo_DFCFC3/core_11.cir",
+          "topo_DFCFC3/core_02.cir",
+          "topo_DFCFC3/core_16.cir",
+          "topo_DFCFC3/core_12.cir",
+          "topo_DFCFC3/core_19.cir",
+          "topo_DFCFC3/core_10.cir",
+          "topo_DFCFC3/core_14.cir"
+        ],
+        "2": [
+          "topo_DFCFC3/core_00.cir",
+          "topo_DFCFC3/core_01.cir"
+        ],
+        "4": [
+          "topo_DFCFC3/core_00.cir",
+          "topo_DFCFC3/core_01.cir",
+          "topo_DFCFC3/core_07.cir",
+          "topo_DFCFC3/core_11.cir"
+        ],
+        "6": [
+          "topo_DFCFC3/core_00.cir",
+          "topo_DFCFC3/core_01.cir",
+          "topo_DFCFC3/core_07.cir",
+          "topo_DFCFC3/core_11.cir",
+          "topo_DFCFC3/core_02.cir",
+          "topo_DFCFC3/core_16.cir"
+        ],
+        "8": [
+          "topo_DFCFC3/core_00.cir",
+          "topo_DFCFC3/core_01.cir",
+          "topo_DFCFC3/core_07.cir",
+          "topo_DFCFC3/core_11.cir",
+          "topo_DFCFC3/core_02.cir",
+          "topo_DFCFC3/core_16.cir",
+          "topo_DFCFC3/core_12.cir",
+          "topo_DFCFC3/core_19.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_DFCFC3/core_00.cir",
+        "topo_DFCFC3/core_01.cir",
+        "topo_DFCFC3/core_07.cir",
+        "topo_DFCFC3/core_11.cir",
+        "topo_DFCFC3/core_02.cir",
+        "topo_DFCFC3/core_16.cir",
+        "topo_DFCFC3/core_12.cir",
+        "topo_DFCFC3/core_19.cir",
+        "topo_DFCFC3/core_10.cir",
+        "topo_DFCFC3/core_14.cir"
+      ]
+    },
+    "topo_IAC": {
+      "test": [
+        "topo_IAC/core_13.cir",
+        "topo_IAC/core_19.cir",
+        "topo_IAC/core_08.cir",
+        "topo_IAC/core_09.cir",
+        "topo_IAC/core_00.cir",
+        "topo_IAC/core_10.cir",
+        "topo_IAC/core_02.cir",
+        "topo_IAC/core_18.cir",
+        "topo_IAC/core_07.cir",
+        "topo_IAC/core_03.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_IAC/core_15.cir",
+          "topo_IAC/core_16.cir",
+          "topo_IAC/core_04.cir",
+          "topo_IAC/core_17.cir",
+          "topo_IAC/core_12.cir",
+          "topo_IAC/core_06.cir",
+          "topo_IAC/core_05.cir",
+          "topo_IAC/core_01.cir",
+          "topo_IAC/core_14.cir",
+          "topo_IAC/core_11.cir"
+        ],
+        "2": [
+          "topo_IAC/core_15.cir",
+          "topo_IAC/core_16.cir"
+        ],
+        "4": [
+          "topo_IAC/core_15.cir",
+          "topo_IAC/core_16.cir",
+          "topo_IAC/core_04.cir",
+          "topo_IAC/core_17.cir"
+        ],
+        "6": [
+          "topo_IAC/core_15.cir",
+          "topo_IAC/core_16.cir",
+          "topo_IAC/core_04.cir",
+          "topo_IAC/core_17.cir",
+          "topo_IAC/core_12.cir",
+          "topo_IAC/core_06.cir"
+        ],
+        "8": [
+          "topo_IAC/core_15.cir",
+          "topo_IAC/core_16.cir",
+          "topo_IAC/core_04.cir",
+          "topo_IAC/core_17.cir",
+          "topo_IAC/core_12.cir",
+          "topo_IAC/core_06.cir",
+          "topo_IAC/core_05.cir",
+          "topo_IAC/core_01.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_IAC/core_15.cir",
+        "topo_IAC/core_16.cir",
+        "topo_IAC/core_04.cir",
+        "topo_IAC/core_17.cir",
+        "topo_IAC/core_12.cir",
+        "topo_IAC/core_06.cir",
+        "topo_IAC/core_05.cir",
+        "topo_IAC/core_01.cir",
+        "topo_IAC/core_14.cir",
+        "topo_IAC/core_11.cir"
+      ]
+    },
+    "topo_MNMC": {
+      "test": [
+        "topo_MNMC/core_18.cir",
+        "topo_MNMC/core_15.cir",
+        "topo_MNMC/core_03.cir",
+        "topo_MNMC/core_17.cir",
+        "topo_MNMC/core_19.cir",
+        "topo_MNMC/core_08.cir",
+        "topo_MNMC/core_07.cir",
+        "topo_MNMC/core_16.cir",
+        "topo_MNMC/core_02.cir",
+        "topo_MNMC/core_10.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_MNMC/core_04.cir",
+          "topo_MNMC/core_14.cir",
+          "topo_MNMC/core_00.cir",
+          "topo_MNMC/core_01.cir",
+          "topo_MNMC/core_05.cir",
+          "topo_MNMC/core_11.cir",
+          "topo_MNMC/core_06.cir",
+          "topo_MNMC/core_12.cir",
+          "topo_MNMC/core_13.cir",
+          "topo_MNMC/core_09.cir"
+        ],
+        "2": [
+          "topo_MNMC/core_04.cir",
+          "topo_MNMC/core_14.cir"
+        ],
+        "4": [
+          "topo_MNMC/core_04.cir",
+          "topo_MNMC/core_14.cir",
+          "topo_MNMC/core_00.cir",
+          "topo_MNMC/core_01.cir"
+        ],
+        "6": [
+          "topo_MNMC/core_04.cir",
+          "topo_MNMC/core_14.cir",
+          "topo_MNMC/core_00.cir",
+          "topo_MNMC/core_01.cir",
+          "topo_MNMC/core_05.cir",
+          "topo_MNMC/core_11.cir"
+        ],
+        "8": [
+          "topo_MNMC/core_04.cir",
+          "topo_MNMC/core_14.cir",
+          "topo_MNMC/core_00.cir",
+          "topo_MNMC/core_01.cir",
+          "topo_MNMC/core_05.cir",
+          "topo_MNMC/core_11.cir",
+          "topo_MNMC/core_06.cir",
+          "topo_MNMC/core_12.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_MNMC/core_04.cir",
+        "topo_MNMC/core_14.cir",
+        "topo_MNMC/core_00.cir",
+        "topo_MNMC/core_01.cir",
+        "topo_MNMC/core_05.cir",
+        "topo_MNMC/core_11.cir",
+        "topo_MNMC/core_06.cir",
+        "topo_MNMC/core_12.cir",
+        "topo_MNMC/core_13.cir",
+        "topo_MNMC/core_09.cir"
+      ]
+    },
+    "topo_NCFF": {
+      "test": [
+        "topo_NCFF/core_15.cir",
+        "topo_NCFF/core_10.cir",
+        "topo_NCFF/core_00.cir",
+        "topo_NCFF/core_18.cir",
+        "topo_NCFF/core_16.cir",
+        "topo_NCFF/core_14.cir",
+        "topo_NCFF/core_17.cir",
+        "topo_NCFF/core_19.cir",
+        "topo_NCFF/core_11.cir",
+        "topo_NCFF/core_13.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_NCFF/core_03.cir",
+          "topo_NCFF/core_07.cir",
+          "topo_NCFF/core_04.cir",
+          "topo_NCFF/core_09.cir",
+          "topo_NCFF/core_08.cir",
+          "topo_NCFF/core_02.cir",
+          "topo_NCFF/core_05.cir",
+          "topo_NCFF/core_06.cir",
+          "topo_NCFF/core_12.cir",
+          "topo_NCFF/core_01.cir"
+        ],
+        "2": [
+          "topo_NCFF/core_03.cir",
+          "topo_NCFF/core_07.cir"
+        ],
+        "4": [
+          "topo_NCFF/core_03.cir",
+          "topo_NCFF/core_07.cir",
+          "topo_NCFF/core_04.cir",
+          "topo_NCFF/core_09.cir"
+        ],
+        "6": [
+          "topo_NCFF/core_03.cir",
+          "topo_NCFF/core_07.cir",
+          "topo_NCFF/core_04.cir",
+          "topo_NCFF/core_09.cir",
+          "topo_NCFF/core_08.cir",
+          "topo_NCFF/core_02.cir"
+        ],
+        "8": [
+          "topo_NCFF/core_03.cir",
+          "topo_NCFF/core_07.cir",
+          "topo_NCFF/core_04.cir",
+          "topo_NCFF/core_09.cir",
+          "topo_NCFF/core_08.cir",
+          "topo_NCFF/core_02.cir",
+          "topo_NCFF/core_05.cir",
+          "topo_NCFF/core_06.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_NCFF/core_03.cir",
+        "topo_NCFF/core_07.cir",
+        "topo_NCFF/core_04.cir",
+        "topo_NCFF/core_09.cir",
+        "topo_NCFF/core_08.cir",
+        "topo_NCFF/core_02.cir",
+        "topo_NCFF/core_05.cir",
+        "topo_NCFF/core_06.cir",
+        "topo_NCFF/core_12.cir",
+        "topo_NCFF/core_01.cir"
+      ]
+    },
+    "topo_NGCC": {
+      "test": [
+        "topo_NGCC/core_16.cir",
+        "topo_NGCC/core_01.cir",
+        "topo_NGCC/core_03.cir",
+        "topo_NGCC/core_07.cir",
+        "topo_NGCC/core_19.cir",
+        "topo_NGCC/core_05.cir",
+        "topo_NGCC/core_13.cir",
+        "topo_NGCC/core_04.cir",
+        "topo_NGCC/core_14.cir",
+        "topo_NGCC/core_17.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_NGCC/core_09.cir",
+          "topo_NGCC/core_02.cir",
+          "topo_NGCC/core_12.cir",
+          "topo_NGCC/core_06.cir",
+          "topo_NGCC/core_10.cir",
+          "topo_NGCC/core_18.cir",
+          "topo_NGCC/core_15.cir",
+          "topo_NGCC/core_00.cir",
+          "topo_NGCC/core_11.cir",
+          "topo_NGCC/core_08.cir"
+        ],
+        "2": [
+          "topo_NGCC/core_09.cir",
+          "topo_NGCC/core_02.cir"
+        ],
+        "4": [
+          "topo_NGCC/core_09.cir",
+          "topo_NGCC/core_02.cir",
+          "topo_NGCC/core_12.cir",
+          "topo_NGCC/core_06.cir"
+        ],
+        "6": [
+          "topo_NGCC/core_09.cir",
+          "topo_NGCC/core_02.cir",
+          "topo_NGCC/core_12.cir",
+          "topo_NGCC/core_06.cir",
+          "topo_NGCC/core_10.cir",
+          "topo_NGCC/core_18.cir"
+        ],
+        "8": [
+          "topo_NGCC/core_09.cir",
+          "topo_NGCC/core_02.cir",
+          "topo_NGCC/core_12.cir",
+          "topo_NGCC/core_06.cir",
+          "topo_NGCC/core_10.cir",
+          "topo_NGCC/core_18.cir",
+          "topo_NGCC/core_15.cir",
+          "topo_NGCC/core_00.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_NGCC/core_09.cir",
+        "topo_NGCC/core_02.cir",
+        "topo_NGCC/core_12.cir",
+        "topo_NGCC/core_06.cir",
+        "topo_NGCC/core_10.cir",
+        "topo_NGCC/core_18.cir",
+        "topo_NGCC/core_15.cir",
+        "topo_NGCC/core_00.cir",
+        "topo_NGCC/core_11.cir",
+        "topo_NGCC/core_08.cir"
+      ]
+    },
+    "topo_NMC": {
+      "test": [
+        "topo_NMC/core_19.cir",
+        "topo_NMC/core_16.cir",
+        "topo_NMC/core_02.cir",
+        "topo_NMC/core_00.cir",
+        "topo_NMC/core_14.cir",
+        "topo_NMC/core_12.cir",
+        "topo_NMC/core_06.cir",
+        "topo_NMC/core_18.cir",
+        "topo_NMC/core_15.cir",
+        "topo_NMC/core_13.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_NMC/core_01.cir",
+          "topo_NMC/core_09.cir",
+          "topo_NMC/core_10.cir",
+          "topo_NMC/core_05.cir",
+          "topo_NMC/core_08.cir",
+          "topo_NMC/core_03.cir",
+          "topo_NMC/core_17.cir",
+          "topo_NMC/core_07.cir",
+          "topo_NMC/core_04.cir",
+          "topo_NMC/core_11.cir"
+        ],
+        "2": [
+          "topo_NMC/core_01.cir",
+          "topo_NMC/core_09.cir"
+        ],
+        "4": [
+          "topo_NMC/core_01.cir",
+          "topo_NMC/core_09.cir",
+          "topo_NMC/core_10.cir",
+          "topo_NMC/core_05.cir"
+        ],
+        "6": [
+          "topo_NMC/core_01.cir",
+          "topo_NMC/core_09.cir",
+          "topo_NMC/core_10.cir",
+          "topo_NMC/core_05.cir",
+          "topo_NMC/core_08.cir",
+          "topo_NMC/core_03.cir"
+        ],
+        "8": [
+          "topo_NMC/core_01.cir",
+          "topo_NMC/core_09.cir",
+          "topo_NMC/core_10.cir",
+          "topo_NMC/core_05.cir",
+          "topo_NMC/core_08.cir",
+          "topo_NMC/core_03.cir",
+          "topo_NMC/core_17.cir",
+          "topo_NMC/core_07.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_NMC/core_01.cir",
+        "topo_NMC/core_09.cir",
+        "topo_NMC/core_10.cir",
+        "topo_NMC/core_05.cir",
+        "topo_NMC/core_08.cir",
+        "topo_NMC/core_03.cir",
+        "topo_NMC/core_17.cir",
+        "topo_NMC/core_07.cir",
+        "topo_NMC/core_04.cir",
+        "topo_NMC/core_11.cir"
+      ]
+    },
+    "topo_NMCCB": {
+      "test": [
+        "topo_NMCCB/core_08.cir",
+        "topo_NMCCB/core_07.cir",
+        "topo_NMCCB/core_19.cir",
+        "topo_NMCCB/core_14.cir",
+        "topo_NMCCB/core_00.cir",
+        "topo_NMCCB/core_10.cir",
+        "topo_NMCCB/core_17.cir",
+        "topo_NMCCB/core_01.cir",
+        "topo_NMCCB/core_06.cir",
+        "topo_NMCCB/core_09.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_NMCCB/core_18.cir",
+          "topo_NMCCB/core_03.cir",
+          "topo_NMCCB/core_12.cir",
+          "topo_NMCCB/core_05.cir",
+          "topo_NMCCB/core_16.cir",
+          "topo_NMCCB/core_11.cir",
+          "topo_NMCCB/core_04.cir",
+          "topo_NMCCB/core_13.cir",
+          "topo_NMCCB/core_02.cir",
+          "topo_NMCCB/core_15.cir"
+        ],
+        "2": [
+          "topo_NMCCB/core_18.cir",
+          "topo_NMCCB/core_03.cir"
+        ],
+        "4": [
+          "topo_NMCCB/core_18.cir",
+          "topo_NMCCB/core_03.cir",
+          "topo_NMCCB/core_12.cir",
+          "topo_NMCCB/core_05.cir"
+        ],
+        "6": [
+          "topo_NMCCB/core_18.cir",
+          "topo_NMCCB/core_03.cir",
+          "topo_NMCCB/core_12.cir",
+          "topo_NMCCB/core_05.cir",
+          "topo_NMCCB/core_16.cir",
+          "topo_NMCCB/core_11.cir"
+        ],
+        "8": [
+          "topo_NMCCB/core_18.cir",
+          "topo_NMCCB/core_03.cir",
+          "topo_NMCCB/core_12.cir",
+          "topo_NMCCB/core_05.cir",
+          "topo_NMCCB/core_16.cir",
+          "topo_NMCCB/core_11.cir",
+          "topo_NMCCB/core_04.cir",
+          "topo_NMCCB/core_13.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_NMCCB/core_18.cir",
+        "topo_NMCCB/core_03.cir",
+        "topo_NMCCB/core_12.cir",
+        "topo_NMCCB/core_05.cir",
+        "topo_NMCCB/core_16.cir",
+        "topo_NMCCB/core_11.cir",
+        "topo_NMCCB/core_04.cir",
+        "topo_NMCCB/core_13.cir",
+        "topo_NMCCB/core_02.cir",
+        "topo_NMCCB/core_15.cir"
+      ]
+    },
+    "topo_NMCF": {
+      "test": [
+        "topo_NMCF/core_14.cir",
+        "topo_NMCF/core_10.cir",
+        "topo_NMCF/core_06.cir",
+        "topo_NMCF/core_15.cir",
+        "topo_NMCF/core_09.cir",
+        "topo_NMCF/core_01.cir",
+        "topo_NMCF/core_19.cir",
+        "topo_NMCF/core_03.cir",
+        "topo_NMCF/core_12.cir",
+        "topo_NMCF/core_07.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_NMCF/core_00.cir",
+          "topo_NMCF/core_04.cir",
+          "topo_NMCF/core_17.cir",
+          "topo_NMCF/core_16.cir",
+          "topo_NMCF/core_18.cir",
+          "topo_NMCF/core_13.cir",
+          "topo_NMCF/core_02.cir",
+          "topo_NMCF/core_05.cir",
+          "topo_NMCF/core_08.cir",
+          "topo_NMCF/core_11.cir"
+        ],
+        "2": [
+          "topo_NMCF/core_00.cir",
+          "topo_NMCF/core_04.cir"
+        ],
+        "4": [
+          "topo_NMCF/core_00.cir",
+          "topo_NMCF/core_04.cir",
+          "topo_NMCF/core_17.cir",
+          "topo_NMCF/core_16.cir"
+        ],
+        "6": [
+          "topo_NMCF/core_00.cir",
+          "topo_NMCF/core_04.cir",
+          "topo_NMCF/core_17.cir",
+          "topo_NMCF/core_16.cir",
+          "topo_NMCF/core_18.cir",
+          "topo_NMCF/core_13.cir"
+        ],
+        "8": [
+          "topo_NMCF/core_00.cir",
+          "topo_NMCF/core_04.cir",
+          "topo_NMCF/core_17.cir",
+          "topo_NMCF/core_16.cir",
+          "topo_NMCF/core_18.cir",
+          "topo_NMCF/core_13.cir",
+          "topo_NMCF/core_02.cir",
+          "topo_NMCF/core_05.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_NMCF/core_00.cir",
+        "topo_NMCF/core_04.cir",
+        "topo_NMCF/core_17.cir",
+        "topo_NMCF/core_16.cir",
+        "topo_NMCF/core_18.cir",
+        "topo_NMCF/core_13.cir",
+        "topo_NMCF/core_02.cir",
+        "topo_NMCF/core_05.cir",
+        "topo_NMCF/core_08.cir",
+        "topo_NMCF/core_11.cir"
+      ]
+    },
+    "topo_NMCNR": {
+      "test": [
+        "topo_NMCNR/core_01.cir",
+        "topo_NMCNR/core_12.cir",
+        "topo_NMCNR/core_18.cir",
+        "topo_NMCNR/core_07.cir",
+        "topo_NMCNR/core_00.cir",
+        "topo_NMCNR/core_02.cir",
+        "topo_NMCNR/core_10.cir",
+        "topo_NMCNR/core_14.cir",
+        "topo_NMCNR/core_09.cir",
+        "topo_NMCNR/core_04.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_NMCNR/core_06.cir",
+          "topo_NMCNR/core_13.cir",
+          "topo_NMCNR/core_17.cir",
+          "topo_NMCNR/core_05.cir",
+          "topo_NMCNR/core_11.cir",
+          "topo_NMCNR/core_15.cir",
+          "topo_NMCNR/core_19.cir",
+          "topo_NMCNR/core_03.cir",
+          "topo_NMCNR/core_08.cir",
+          "topo_NMCNR/core_16.cir"
+        ],
+        "2": [
+          "topo_NMCNR/core_06.cir",
+          "topo_NMCNR/core_13.cir"
+        ],
+        "4": [
+          "topo_NMCNR/core_06.cir",
+          "topo_NMCNR/core_13.cir",
+          "topo_NMCNR/core_17.cir",
+          "topo_NMCNR/core_05.cir"
+        ],
+        "6": [
+          "topo_NMCNR/core_06.cir",
+          "topo_NMCNR/core_13.cir",
+          "topo_NMCNR/core_17.cir",
+          "topo_NMCNR/core_05.cir",
+          "topo_NMCNR/core_11.cir",
+          "topo_NMCNR/core_15.cir"
+        ],
+        "8": [
+          "topo_NMCNR/core_06.cir",
+          "topo_NMCNR/core_13.cir",
+          "topo_NMCNR/core_17.cir",
+          "topo_NMCNR/core_05.cir",
+          "topo_NMCNR/core_11.cir",
+          "topo_NMCNR/core_15.cir",
+          "topo_NMCNR/core_19.cir",
+          "topo_NMCNR/core_03.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_NMCNR/core_06.cir",
+        "topo_NMCNR/core_13.cir",
+        "topo_NMCNR/core_17.cir",
+        "topo_NMCNR/core_05.cir",
+        "topo_NMCNR/core_11.cir",
+        "topo_NMCNR/core_15.cir",
+        "topo_NMCNR/core_19.cir",
+        "topo_NMCNR/core_03.cir",
+        "topo_NMCNR/core_08.cir",
+        "topo_NMCNR/core_16.cir"
+      ]
+    },
+    "topo_NMCVB": {
+      "test": [
+        "topo_NMCVB/core_00.cir",
+        "topo_NMCVB/core_08.cir",
+        "topo_NMCVB/core_10.cir",
+        "topo_NMCVB/core_12.cir",
+        "topo_NMCVB/core_15.cir",
+        "topo_NMCVB/core_18.cir",
+        "topo_NMCVB/core_14.cir",
+        "topo_NMCVB/core_05.cir",
+        "topo_NMCVB/core_09.cir",
+        "topo_NMCVB/core_11.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_NMCVB/core_06.cir",
+          "topo_NMCVB/core_03.cir",
+          "topo_NMCVB/core_17.cir",
+          "topo_NMCVB/core_16.cir",
+          "topo_NMCVB/core_13.cir",
+          "topo_NMCVB/core_02.cir",
+          "topo_NMCVB/core_07.cir",
+          "topo_NMCVB/core_01.cir",
+          "topo_NMCVB/core_04.cir",
+          "topo_NMCVB/core_19.cir"
+        ],
+        "2": [
+          "topo_NMCVB/core_06.cir",
+          "topo_NMCVB/core_03.cir"
+        ],
+        "4": [
+          "topo_NMCVB/core_06.cir",
+          "topo_NMCVB/core_03.cir",
+          "topo_NMCVB/core_17.cir",
+          "topo_NMCVB/core_16.cir"
+        ],
+        "6": [
+          "topo_NMCVB/core_06.cir",
+          "topo_NMCVB/core_03.cir",
+          "topo_NMCVB/core_17.cir",
+          "topo_NMCVB/core_16.cir",
+          "topo_NMCVB/core_13.cir",
+          "topo_NMCVB/core_02.cir"
+        ],
+        "8": [
+          "topo_NMCVB/core_06.cir",
+          "topo_NMCVB/core_03.cir",
+          "topo_NMCVB/core_17.cir",
+          "topo_NMCVB/core_16.cir",
+          "topo_NMCVB/core_13.cir",
+          "topo_NMCVB/core_02.cir",
+          "topo_NMCVB/core_07.cir",
+          "topo_NMCVB/core_01.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_NMCVB/core_06.cir",
+        "topo_NMCVB/core_03.cir",
+        "topo_NMCVB/core_17.cir",
+        "topo_NMCVB/core_16.cir",
+        "topo_NMCVB/core_13.cir",
+        "topo_NMCVB/core_02.cir",
+        "topo_NMCVB/core_07.cir",
+        "topo_NMCVB/core_01.cir",
+        "topo_NMCVB/core_04.cir",
+        "topo_NMCVB/core_19.cir"
+      ]
+    },
+    "topo_NR": {
+      "test": [
+        "topo_NR/core_07.cir",
+        "topo_NR/core_19.cir",
+        "topo_NR/core_04.cir",
+        "topo_NR/core_14.cir",
+        "topo_NR/core_16.cir",
+        "topo_NR/core_17.cir",
+        "topo_NR/core_10.cir",
+        "topo_NR/core_06.cir",
+        "topo_NR/core_09.cir",
+        "topo_NR/core_08.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_NR/core_18.cir",
+          "topo_NR/core_13.cir",
+          "topo_NR/core_15.cir",
+          "topo_NR/core_11.cir",
+          "topo_NR/core_02.cir",
+          "topo_NR/core_03.cir",
+          "topo_NR/core_05.cir",
+          "topo_NR/core_01.cir",
+          "topo_NR/core_00.cir",
+          "topo_NR/core_12.cir"
+        ],
+        "2": [
+          "topo_NR/core_18.cir",
+          "topo_NR/core_13.cir"
+        ],
+        "4": [
+          "topo_NR/core_18.cir",
+          "topo_NR/core_13.cir",
+          "topo_NR/core_15.cir",
+          "topo_NR/core_11.cir"
+        ],
+        "6": [
+          "topo_NR/core_18.cir",
+          "topo_NR/core_13.cir",
+          "topo_NR/core_15.cir",
+          "topo_NR/core_11.cir",
+          "topo_NR/core_02.cir",
+          "topo_NR/core_03.cir"
+        ],
+        "8": [
+          "topo_NR/core_18.cir",
+          "topo_NR/core_13.cir",
+          "topo_NR/core_15.cir",
+          "topo_NR/core_11.cir",
+          "topo_NR/core_02.cir",
+          "topo_NR/core_03.cir",
+          "topo_NR/core_05.cir",
+          "topo_NR/core_01.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_NR/core_18.cir",
+        "topo_NR/core_13.cir",
+        "topo_NR/core_15.cir",
+        "topo_NR/core_11.cir",
+        "topo_NR/core_02.cir",
+        "topo_NR/core_03.cir",
+        "topo_NR/core_05.cir",
+        "topo_NR/core_01.cir",
+        "topo_NR/core_00.cir",
+        "topo_NR/core_12.cir"
+      ]
+    },
+    "topo_RAFFC": {
+      "test": [
+        "topo_RAFFC/core_02.cir",
+        "topo_RAFFC/core_12.cir",
+        "topo_RAFFC/core_01.cir",
+        "topo_RAFFC/core_00.cir",
+        "topo_RAFFC/core_18.cir",
+        "topo_RAFFC/core_13.cir",
+        "topo_RAFFC/core_14.cir",
+        "topo_RAFFC/core_05.cir",
+        "topo_RAFFC/core_08.cir",
+        "topo_RAFFC/core_04.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_RAFFC/core_07.cir",
+          "topo_RAFFC/core_10.cir",
+          "topo_RAFFC/core_09.cir",
+          "topo_RAFFC/core_03.cir",
+          "topo_RAFFC/core_11.cir",
+          "topo_RAFFC/core_06.cir",
+          "topo_RAFFC/core_19.cir",
+          "topo_RAFFC/core_17.cir",
+          "topo_RAFFC/core_15.cir",
+          "topo_RAFFC/core_16.cir"
+        ],
+        "2": [
+          "topo_RAFFC/core_07.cir",
+          "topo_RAFFC/core_10.cir"
+        ],
+        "4": [
+          "topo_RAFFC/core_07.cir",
+          "topo_RAFFC/core_10.cir",
+          "topo_RAFFC/core_09.cir",
+          "topo_RAFFC/core_03.cir"
+        ],
+        "6": [
+          "topo_RAFFC/core_07.cir",
+          "topo_RAFFC/core_10.cir",
+          "topo_RAFFC/core_09.cir",
+          "topo_RAFFC/core_03.cir",
+          "topo_RAFFC/core_11.cir",
+          "topo_RAFFC/core_06.cir"
+        ],
+        "8": [
+          "topo_RAFFC/core_07.cir",
+          "topo_RAFFC/core_10.cir",
+          "topo_RAFFC/core_09.cir",
+          "topo_RAFFC/core_03.cir",
+          "topo_RAFFC/core_11.cir",
+          "topo_RAFFC/core_06.cir",
+          "topo_RAFFC/core_19.cir",
+          "topo_RAFFC/core_17.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_RAFFC/core_07.cir",
+        "topo_RAFFC/core_10.cir",
+        "topo_RAFFC/core_09.cir",
+        "topo_RAFFC/core_03.cir",
+        "topo_RAFFC/core_11.cir",
+        "topo_RAFFC/core_06.cir",
+        "topo_RAFFC/core_19.cir",
+        "topo_RAFFC/core_17.cir",
+        "topo_RAFFC/core_15.cir",
+        "topo_RAFFC/core_16.cir"
+      ]
+    },
+    "topo_RNMCF": {
+      "test": [
+        "topo_RNMCF/core_05.cir",
+        "topo_RNMCF/core_17.cir",
+        "topo_RNMCF/core_14.cir",
+        "topo_RNMCF/core_03.cir",
+        "topo_RNMCF/core_10.cir",
+        "topo_RNMCF/core_06.cir",
+        "topo_RNMCF/core_18.cir",
+        "topo_RNMCF/core_01.cir",
+        "topo_RNMCF/core_11.cir",
+        "topo_RNMCF/core_09.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_RNMCF/core_04.cir",
+          "topo_RNMCF/core_07.cir",
+          "topo_RNMCF/core_00.cir",
+          "topo_RNMCF/core_13.cir",
+          "topo_RNMCF/core_12.cir",
+          "topo_RNMCF/core_19.cir",
+          "topo_RNMCF/core_16.cir",
+          "topo_RNMCF/core_02.cir",
+          "topo_RNMCF/core_15.cir",
+          "topo_RNMCF/core_08.cir"
+        ],
+        "2": [
+          "topo_RNMCF/core_04.cir",
+          "topo_RNMCF/core_07.cir"
+        ],
+        "4": [
+          "topo_RNMCF/core_04.cir",
+          "topo_RNMCF/core_07.cir",
+          "topo_RNMCF/core_00.cir",
+          "topo_RNMCF/core_13.cir"
+        ],
+        "6": [
+          "topo_RNMCF/core_04.cir",
+          "topo_RNMCF/core_07.cir",
+          "topo_RNMCF/core_00.cir",
+          "topo_RNMCF/core_13.cir",
+          "topo_RNMCF/core_12.cir",
+          "topo_RNMCF/core_19.cir"
+        ],
+        "8": [
+          "topo_RNMCF/core_04.cir",
+          "topo_RNMCF/core_07.cir",
+          "topo_RNMCF/core_00.cir",
+          "topo_RNMCF/core_13.cir",
+          "topo_RNMCF/core_12.cir",
+          "topo_RNMCF/core_19.cir",
+          "topo_RNMCF/core_16.cir",
+          "topo_RNMCF/core_02.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_RNMCF/core_04.cir",
+        "topo_RNMCF/core_07.cir",
+        "topo_RNMCF/core_00.cir",
+        "topo_RNMCF/core_13.cir",
+        "topo_RNMCF/core_12.cir",
+        "topo_RNMCF/core_19.cir",
+        "topo_RNMCF/core_16.cir",
+        "topo_RNMCF/core_02.cir",
+        "topo_RNMCF/core_15.cir",
+        "topo_RNMCF/core_08.cir"
+      ]
+    },
+    "topo_RNMCFNR": {
+      "test": [
+        "topo_RNMCFNR/core_00.cir",
+        "topo_RNMCFNR/core_06.cir",
+        "topo_RNMCFNR/core_01.cir",
+        "topo_RNMCFNR/core_11.cir",
+        "topo_RNMCFNR/core_12.cir",
+        "topo_RNMCFNR/core_05.cir",
+        "topo_RNMCFNR/core_08.cir",
+        "topo_RNMCFNR/core_07.cir",
+        "topo_RNMCFNR/core_13.cir",
+        "topo_RNMCFNR/core_10.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_RNMCFNR/core_14.cir",
+          "topo_RNMCFNR/core_15.cir",
+          "topo_RNMCFNR/core_19.cir",
+          "topo_RNMCFNR/core_04.cir",
+          "topo_RNMCFNR/core_02.cir",
+          "topo_RNMCFNR/core_09.cir",
+          "topo_RNMCFNR/core_18.cir",
+          "topo_RNMCFNR/core_16.cir",
+          "topo_RNMCFNR/core_03.cir",
+          "topo_RNMCFNR/core_17.cir"
+        ],
+        "2": [
+          "topo_RNMCFNR/core_14.cir",
+          "topo_RNMCFNR/core_15.cir"
+        ],
+        "4": [
+          "topo_RNMCFNR/core_14.cir",
+          "topo_RNMCFNR/core_15.cir",
+          "topo_RNMCFNR/core_19.cir",
+          "topo_RNMCFNR/core_04.cir"
+        ],
+        "6": [
+          "topo_RNMCFNR/core_14.cir",
+          "topo_RNMCFNR/core_15.cir",
+          "topo_RNMCFNR/core_19.cir",
+          "topo_RNMCFNR/core_04.cir",
+          "topo_RNMCFNR/core_02.cir",
+          "topo_RNMCFNR/core_09.cir"
+        ],
+        "8": [
+          "topo_RNMCFNR/core_14.cir",
+          "topo_RNMCFNR/core_15.cir",
+          "topo_RNMCFNR/core_19.cir",
+          "topo_RNMCFNR/core_04.cir",
+          "topo_RNMCFNR/core_02.cir",
+          "topo_RNMCFNR/core_09.cir",
+          "topo_RNMCFNR/core_18.cir",
+          "topo_RNMCFNR/core_16.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_RNMCFNR/core_14.cir",
+        "topo_RNMCFNR/core_15.cir",
+        "topo_RNMCFNR/core_19.cir",
+        "topo_RNMCFNR/core_04.cir",
+        "topo_RNMCFNR/core_02.cir",
+        "topo_RNMCFNR/core_09.cir",
+        "topo_RNMCFNR/core_18.cir",
+        "topo_RNMCFNR/core_16.cir",
+        "topo_RNMCFNR/core_03.cir",
+        "topo_RNMCFNR/core_17.cir"
+      ]
+    },
+    "topo_SCAFC": {
+      "test": [
+        "topo_SCAFC/core_05.cir",
+        "topo_SCAFC/core_04.cir",
+        "topo_SCAFC/core_17.cir",
+        "topo_SCAFC/core_01.cir",
+        "topo_SCAFC/core_13.cir",
+        "topo_SCAFC/core_08.cir",
+        "topo_SCAFC/core_10.cir",
+        "topo_SCAFC/core_12.cir",
+        "topo_SCAFC/core_06.cir",
+        "topo_SCAFC/core_00.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_SCAFC/core_07.cir",
+          "topo_SCAFC/core_03.cir",
+          "topo_SCAFC/core_11.cir",
+          "topo_SCAFC/core_14.cir",
+          "topo_SCAFC/core_02.cir",
+          "topo_SCAFC/core_09.cir",
+          "topo_SCAFC/core_19.cir",
+          "topo_SCAFC/core_16.cir",
+          "topo_SCAFC/core_18.cir",
+          "topo_SCAFC/core_15.cir"
+        ],
+        "2": [
+          "topo_SCAFC/core_07.cir",
+          "topo_SCAFC/core_03.cir"
+        ],
+        "4": [
+          "topo_SCAFC/core_07.cir",
+          "topo_SCAFC/core_03.cir",
+          "topo_SCAFC/core_11.cir",
+          "topo_SCAFC/core_14.cir"
+        ],
+        "6": [
+          "topo_SCAFC/core_07.cir",
+          "topo_SCAFC/core_03.cir",
+          "topo_SCAFC/core_11.cir",
+          "topo_SCAFC/core_14.cir",
+          "topo_SCAFC/core_02.cir",
+          "topo_SCAFC/core_09.cir"
+        ],
+        "8": [
+          "topo_SCAFC/core_07.cir",
+          "topo_SCAFC/core_03.cir",
+          "topo_SCAFC/core_11.cir",
+          "topo_SCAFC/core_14.cir",
+          "topo_SCAFC/core_02.cir",
+          "topo_SCAFC/core_09.cir",
+          "topo_SCAFC/core_19.cir",
+          "topo_SCAFC/core_16.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_SCAFC/core_07.cir",
+        "topo_SCAFC/core_03.cir",
+        "topo_SCAFC/core_11.cir",
+        "topo_SCAFC/core_14.cir",
+        "topo_SCAFC/core_02.cir",
+        "topo_SCAFC/core_09.cir",
+        "topo_SCAFC/core_19.cir",
+        "topo_SCAFC/core_16.cir",
+        "topo_SCAFC/core_18.cir",
+        "topo_SCAFC/core_15.cir"
+      ]
+    },
+    "topo_SMC": {
+      "test": [
+        "topo_SMC/core_14.cir",
+        "topo_SMC/core_19.cir",
+        "topo_SMC/core_08.cir",
+        "topo_SMC/core_09.cir",
+        "topo_SMC/core_06.cir",
+        "topo_SMC/core_10.cir",
+        "topo_SMC/core_11.cir",
+        "topo_SMC/core_13.cir",
+        "topo_SMC/core_03.cir",
+        "topo_SMC/core_01.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_SMC/core_16.cir",
+          "topo_SMC/core_07.cir",
+          "topo_SMC/core_02.cir",
+          "topo_SMC/core_15.cir",
+          "topo_SMC/core_12.cir",
+          "topo_SMC/core_05.cir",
+          "topo_SMC/core_00.cir",
+          "topo_SMC/core_04.cir",
+          "topo_SMC/core_18.cir",
+          "topo_SMC/core_17.cir"
+        ],
+        "2": [
+          "topo_SMC/core_16.cir",
+          "topo_SMC/core_07.cir"
+        ],
+        "4": [
+          "topo_SMC/core_16.cir",
+          "topo_SMC/core_07.cir",
+          "topo_SMC/core_02.cir",
+          "topo_SMC/core_15.cir"
+        ],
+        "6": [
+          "topo_SMC/core_16.cir",
+          "topo_SMC/core_07.cir",
+          "topo_SMC/core_02.cir",
+          "topo_SMC/core_15.cir",
+          "topo_SMC/core_12.cir",
+          "topo_SMC/core_05.cir"
+        ],
+        "8": [
+          "topo_SMC/core_16.cir",
+          "topo_SMC/core_07.cir",
+          "topo_SMC/core_02.cir",
+          "topo_SMC/core_15.cir",
+          "topo_SMC/core_12.cir",
+          "topo_SMC/core_05.cir",
+          "topo_SMC/core_00.cir",
+          "topo_SMC/core_04.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_SMC/core_16.cir",
+        "topo_SMC/core_07.cir",
+        "topo_SMC/core_02.cir",
+        "topo_SMC/core_15.cir",
+        "topo_SMC/core_12.cir",
+        "topo_SMC/core_05.cir",
+        "topo_SMC/core_00.cir",
+        "topo_SMC/core_04.cir",
+        "topo_SMC/core_18.cir",
+        "topo_SMC/core_17.cir"
+      ]
+    },
+    "topo_SMFFC": {
+      "test": [
+        "topo_SMFFC/core_04.cir",
+        "topo_SMFFC/core_19.cir",
+        "topo_SMFFC/core_01.cir",
+        "topo_SMFFC/core_18.cir",
+        "topo_SMFFC/core_15.cir",
+        "topo_SMFFC/core_16.cir",
+        "topo_SMFFC/core_10.cir",
+        "topo_SMFFC/core_02.cir",
+        "topo_SMFFC/core_13.cir",
+        "topo_SMFFC/core_11.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_SMFFC/core_09.cir",
+          "topo_SMFFC/core_05.cir",
+          "topo_SMFFC/core_00.cir",
+          "topo_SMFFC/core_12.cir",
+          "topo_SMFFC/core_07.cir",
+          "topo_SMFFC/core_03.cir",
+          "topo_SMFFC/core_17.cir",
+          "topo_SMFFC/core_06.cir",
+          "topo_SMFFC/core_14.cir",
+          "topo_SMFFC/core_08.cir"
+        ],
+        "2": [
+          "topo_SMFFC/core_09.cir",
+          "topo_SMFFC/core_05.cir"
+        ],
+        "4": [
+          "topo_SMFFC/core_09.cir",
+          "topo_SMFFC/core_05.cir",
+          "topo_SMFFC/core_00.cir",
+          "topo_SMFFC/core_12.cir"
+        ],
+        "6": [
+          "topo_SMFFC/core_09.cir",
+          "topo_SMFFC/core_05.cir",
+          "topo_SMFFC/core_00.cir",
+          "topo_SMFFC/core_12.cir",
+          "topo_SMFFC/core_07.cir",
+          "topo_SMFFC/core_03.cir"
+        ],
+        "8": [
+          "topo_SMFFC/core_09.cir",
+          "topo_SMFFC/core_05.cir",
+          "topo_SMFFC/core_00.cir",
+          "topo_SMFFC/core_12.cir",
+          "topo_SMFFC/core_07.cir",
+          "topo_SMFFC/core_03.cir",
+          "topo_SMFFC/core_17.cir",
+          "topo_SMFFC/core_06.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_SMFFC/core_09.cir",
+        "topo_SMFFC/core_05.cir",
+        "topo_SMFFC/core_00.cir",
+        "topo_SMFFC/core_12.cir",
+        "topo_SMFFC/core_07.cir",
+        "topo_SMFFC/core_03.cir",
+        "topo_SMFFC/core_17.cir",
+        "topo_SMFFC/core_06.cir",
+        "topo_SMFFC/core_14.cir",
+        "topo_SMFFC/core_08.cir"
+      ]
+    },
+    "topo_TCFC": {
+      "test": [
+        "topo_TCFC/core_17.cir",
+        "topo_TCFC/core_06.cir",
+        "topo_TCFC/core_03.cir",
+        "topo_TCFC/core_14.cir",
+        "topo_TCFC/core_04.cir",
+        "topo_TCFC/core_00.cir",
+        "topo_TCFC/core_19.cir",
+        "topo_TCFC/core_09.cir",
+        "topo_TCFC/core_05.cir",
+        "topo_TCFC/core_12.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_TCFC/core_13.cir",
+          "topo_TCFC/core_15.cir",
+          "topo_TCFC/core_02.cir",
+          "topo_TCFC/core_08.cir",
+          "topo_TCFC/core_01.cir",
+          "topo_TCFC/core_11.cir",
+          "topo_TCFC/core_16.cir",
+          "topo_TCFC/core_07.cir",
+          "topo_TCFC/core_18.cir",
+          "topo_TCFC/core_10.cir"
+        ],
+        "2": [
+          "topo_TCFC/core_13.cir",
+          "topo_TCFC/core_15.cir"
+        ],
+        "4": [
+          "topo_TCFC/core_13.cir",
+          "topo_TCFC/core_15.cir",
+          "topo_TCFC/core_02.cir",
+          "topo_TCFC/core_08.cir"
+        ],
+        "6": [
+          "topo_TCFC/core_13.cir",
+          "topo_TCFC/core_15.cir",
+          "topo_TCFC/core_02.cir",
+          "topo_TCFC/core_08.cir",
+          "topo_TCFC/core_01.cir",
+          "topo_TCFC/core_11.cir"
+        ],
+        "8": [
+          "topo_TCFC/core_13.cir",
+          "topo_TCFC/core_15.cir",
+          "topo_TCFC/core_02.cir",
+          "topo_TCFC/core_08.cir",
+          "topo_TCFC/core_01.cir",
+          "topo_TCFC/core_11.cir",
+          "topo_TCFC/core_16.cir",
+          "topo_TCFC/core_07.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_TCFC/core_13.cir",
+        "topo_TCFC/core_15.cir",
+        "topo_TCFC/core_02.cir",
+        "topo_TCFC/core_08.cir",
+        "topo_TCFC/core_01.cir",
+        "topo_TCFC/core_11.cir",
+        "topo_TCFC/core_16.cir",
+        "topo_TCFC/core_07.cir",
+        "topo_TCFC/core_18.cir",
+        "topo_TCFC/core_10.cir"
+      ]
+    },
+    "topo_VB": {
+      "test": [
+        "topo_VB/core_04.cir",
+        "topo_VB/core_17.cir",
+        "topo_VB/core_03.cir",
+        "topo_VB/core_12.cir",
+        "topo_VB/core_13.cir",
+        "topo_VB/core_19.cir",
+        "topo_VB/core_10.cir",
+        "topo_VB/core_16.cir",
+        "topo_VB/core_09.cir",
+        "topo_VB/core_02.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_VB/core_11.cir",
+          "topo_VB/core_05.cir",
+          "topo_VB/core_07.cir",
+          "topo_VB/core_08.cir",
+          "topo_VB/core_01.cir",
+          "topo_VB/core_06.cir",
+          "topo_VB/core_00.cir",
+          "topo_VB/core_15.cir",
+          "topo_VB/core_18.cir",
+          "topo_VB/core_14.cir"
+        ],
+        "2": [
+          "topo_VB/core_11.cir",
+          "topo_VB/core_05.cir"
+        ],
+        "4": [
+          "topo_VB/core_11.cir",
+          "topo_VB/core_05.cir",
+          "topo_VB/core_07.cir",
+          "topo_VB/core_08.cir"
+        ],
+        "6": [
+          "topo_VB/core_11.cir",
+          "topo_VB/core_05.cir",
+          "topo_VB/core_07.cir",
+          "topo_VB/core_08.cir",
+          "topo_VB/core_01.cir",
+          "topo_VB/core_06.cir"
+        ],
+        "8": [
+          "topo_VB/core_11.cir",
+          "topo_VB/core_05.cir",
+          "topo_VB/core_07.cir",
+          "topo_VB/core_08.cir",
+          "topo_VB/core_01.cir",
+          "topo_VB/core_06.cir",
+          "topo_VB/core_00.cir",
+          "topo_VB/core_15.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_VB/core_11.cir",
+        "topo_VB/core_05.cir",
+        "topo_VB/core_07.cir",
+        "topo_VB/core_08.cir",
+        "topo_VB/core_01.cir",
+        "topo_VB/core_06.cir",
+        "topo_VB/core_00.cir",
+        "topo_VB/core_15.cir",
+        "topo_VB/core_18.cir",
+        "topo_VB/core_14.cir"
+      ]
+    },
+    "topo_ldo1": {
+      "test": [
+        "topo_ldo1/core_00.cir",
+        "topo_ldo1/core_10.cir",
+        "topo_ldo1/core_02.cir",
+        "topo_ldo1/core_03.cir",
+        "topo_ldo1/core_17.cir",
+        "topo_ldo1/core_15.cir",
+        "topo_ldo1/core_12.cir",
+        "topo_ldo1/core_06.cir",
+        "topo_ldo1/core_13.cir",
+        "topo_ldo1/core_14.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo1/core_08.cir",
+          "topo_ldo1/core_16.cir",
+          "topo_ldo1/core_11.cir",
+          "topo_ldo1/core_07.cir",
+          "topo_ldo1/core_04.cir",
+          "topo_ldo1/core_05.cir",
+          "topo_ldo1/core_09.cir",
+          "topo_ldo1/core_18.cir",
+          "topo_ldo1/core_19.cir",
+          "topo_ldo1/core_01.cir"
+        ],
+        "2": [
+          "topo_ldo1/core_08.cir",
+          "topo_ldo1/core_16.cir"
+        ],
+        "4": [
+          "topo_ldo1/core_08.cir",
+          "topo_ldo1/core_16.cir",
+          "topo_ldo1/core_11.cir",
+          "topo_ldo1/core_07.cir"
+        ],
+        "6": [
+          "topo_ldo1/core_08.cir",
+          "topo_ldo1/core_16.cir",
+          "topo_ldo1/core_11.cir",
+          "topo_ldo1/core_07.cir",
+          "topo_ldo1/core_04.cir",
+          "topo_ldo1/core_05.cir"
+        ],
+        "8": [
+          "topo_ldo1/core_08.cir",
+          "topo_ldo1/core_16.cir",
+          "topo_ldo1/core_11.cir",
+          "topo_ldo1/core_07.cir",
+          "topo_ldo1/core_04.cir",
+          "topo_ldo1/core_05.cir",
+          "topo_ldo1/core_09.cir",
+          "topo_ldo1/core_18.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo1/core_08.cir",
+        "topo_ldo1/core_16.cir",
+        "topo_ldo1/core_11.cir",
+        "topo_ldo1/core_07.cir",
+        "topo_ldo1/core_04.cir",
+        "topo_ldo1/core_05.cir",
+        "topo_ldo1/core_09.cir",
+        "topo_ldo1/core_18.cir",
+        "topo_ldo1/core_19.cir",
+        "topo_ldo1/core_01.cir"
+      ]
+    },
+    "topo_ldo2": {
+      "test": [
+        "topo_ldo2/core_08.cir",
+        "topo_ldo2/core_11.cir",
+        "topo_ldo2/core_09.cir",
+        "topo_ldo2/core_07.cir",
+        "topo_ldo2/core_12.cir",
+        "topo_ldo2/core_10.cir",
+        "topo_ldo2/core_18.cir",
+        "topo_ldo2/core_04.cir",
+        "topo_ldo2/core_14.cir",
+        "topo_ldo2/core_03.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo2/core_02.cir",
+          "topo_ldo2/core_00.cir",
+          "topo_ldo2/core_16.cir",
+          "topo_ldo2/core_17.cir",
+          "topo_ldo2/core_19.cir",
+          "topo_ldo2/core_05.cir",
+          "topo_ldo2/core_01.cir",
+          "topo_ldo2/core_13.cir",
+          "topo_ldo2/core_15.cir",
+          "topo_ldo2/core_06.cir"
+        ],
+        "2": [
+          "topo_ldo2/core_02.cir",
+          "topo_ldo2/core_00.cir"
+        ],
+        "4": [
+          "topo_ldo2/core_02.cir",
+          "topo_ldo2/core_00.cir",
+          "topo_ldo2/core_16.cir",
+          "topo_ldo2/core_17.cir"
+        ],
+        "6": [
+          "topo_ldo2/core_02.cir",
+          "topo_ldo2/core_00.cir",
+          "topo_ldo2/core_16.cir",
+          "topo_ldo2/core_17.cir",
+          "topo_ldo2/core_19.cir",
+          "topo_ldo2/core_05.cir"
+        ],
+        "8": [
+          "topo_ldo2/core_02.cir",
+          "topo_ldo2/core_00.cir",
+          "topo_ldo2/core_16.cir",
+          "topo_ldo2/core_17.cir",
+          "topo_ldo2/core_19.cir",
+          "topo_ldo2/core_05.cir",
+          "topo_ldo2/core_01.cir",
+          "topo_ldo2/core_13.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo2/core_02.cir",
+        "topo_ldo2/core_00.cir",
+        "topo_ldo2/core_16.cir",
+        "topo_ldo2/core_17.cir",
+        "topo_ldo2/core_19.cir",
+        "topo_ldo2/core_05.cir",
+        "topo_ldo2/core_01.cir",
+        "topo_ldo2/core_13.cir",
+        "topo_ldo2/core_15.cir",
+        "topo_ldo2/core_06.cir"
+      ]
+    },
+    "topo_ldo3": {
+      "test": [
+        "topo_ldo3/core_03.cir",
+        "topo_ldo3/core_04.cir",
+        "topo_ldo3/core_11.cir",
+        "topo_ldo3/core_01.cir",
+        "topo_ldo3/core_18.cir",
+        "topo_ldo3/core_19.cir",
+        "topo_ldo3/core_07.cir",
+        "topo_ldo3/core_15.cir",
+        "topo_ldo3/core_16.cir",
+        "topo_ldo3/core_08.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo3/core_02.cir",
+          "topo_ldo3/core_10.cir",
+          "topo_ldo3/core_14.cir",
+          "topo_ldo3/core_06.cir",
+          "topo_ldo3/core_13.cir",
+          "topo_ldo3/core_00.cir",
+          "topo_ldo3/core_09.cir",
+          "topo_ldo3/core_17.cir",
+          "topo_ldo3/core_05.cir",
+          "topo_ldo3/core_12.cir"
+        ],
+        "2": [
+          "topo_ldo3/core_02.cir",
+          "topo_ldo3/core_10.cir"
+        ],
+        "4": [
+          "topo_ldo3/core_02.cir",
+          "topo_ldo3/core_10.cir",
+          "topo_ldo3/core_14.cir",
+          "topo_ldo3/core_06.cir"
+        ],
+        "6": [
+          "topo_ldo3/core_02.cir",
+          "topo_ldo3/core_10.cir",
+          "topo_ldo3/core_14.cir",
+          "topo_ldo3/core_06.cir",
+          "topo_ldo3/core_13.cir",
+          "topo_ldo3/core_00.cir"
+        ],
+        "8": [
+          "topo_ldo3/core_02.cir",
+          "topo_ldo3/core_10.cir",
+          "topo_ldo3/core_14.cir",
+          "topo_ldo3/core_06.cir",
+          "topo_ldo3/core_13.cir",
+          "topo_ldo3/core_00.cir",
+          "topo_ldo3/core_09.cir",
+          "topo_ldo3/core_17.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo3/core_02.cir",
+        "topo_ldo3/core_10.cir",
+        "topo_ldo3/core_14.cir",
+        "topo_ldo3/core_06.cir",
+        "topo_ldo3/core_13.cir",
+        "topo_ldo3/core_00.cir",
+        "topo_ldo3/core_09.cir",
+        "topo_ldo3/core_17.cir",
+        "topo_ldo3/core_05.cir",
+        "topo_ldo3/core_12.cir"
+      ]
+    },
+    "topo_ldo4": {
+      "test": [
+        "topo_ldo4/core_00.cir",
+        "topo_ldo4/core_18.cir",
+        "topo_ldo4/core_07.cir",
+        "topo_ldo4/core_08.cir",
+        "topo_ldo4/core_05.cir",
+        "topo_ldo4/core_16.cir",
+        "topo_ldo4/core_13.cir",
+        "topo_ldo4/core_02.cir",
+        "topo_ldo4/core_06.cir",
+        "topo_ldo4/core_04.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo4/core_17.cir",
+          "topo_ldo4/core_14.cir",
+          "topo_ldo4/core_01.cir",
+          "topo_ldo4/core_09.cir",
+          "topo_ldo4/core_10.cir",
+          "topo_ldo4/core_19.cir",
+          "topo_ldo4/core_12.cir",
+          "topo_ldo4/core_15.cir",
+          "topo_ldo4/core_11.cir",
+          "topo_ldo4/core_03.cir"
+        ],
+        "2": [
+          "topo_ldo4/core_17.cir",
+          "topo_ldo4/core_14.cir"
+        ],
+        "4": [
+          "topo_ldo4/core_17.cir",
+          "topo_ldo4/core_14.cir",
+          "topo_ldo4/core_01.cir",
+          "topo_ldo4/core_09.cir"
+        ],
+        "6": [
+          "topo_ldo4/core_17.cir",
+          "topo_ldo4/core_14.cir",
+          "topo_ldo4/core_01.cir",
+          "topo_ldo4/core_09.cir",
+          "topo_ldo4/core_10.cir",
+          "topo_ldo4/core_19.cir"
+        ],
+        "8": [
+          "topo_ldo4/core_17.cir",
+          "topo_ldo4/core_14.cir",
+          "topo_ldo4/core_01.cir",
+          "topo_ldo4/core_09.cir",
+          "topo_ldo4/core_10.cir",
+          "topo_ldo4/core_19.cir",
+          "topo_ldo4/core_12.cir",
+          "topo_ldo4/core_15.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo4/core_17.cir",
+        "topo_ldo4/core_14.cir",
+        "topo_ldo4/core_01.cir",
+        "topo_ldo4/core_09.cir",
+        "topo_ldo4/core_10.cir",
+        "topo_ldo4/core_19.cir",
+        "topo_ldo4/core_12.cir",
+        "topo_ldo4/core_15.cir",
+        "topo_ldo4/core_11.cir",
+        "topo_ldo4/core_03.cir"
+      ]
+    },
+    "topo_ldo5": {
+      "test": [
+        "topo_ldo5/core_14.cir",
+        "topo_ldo5/core_06.cir",
+        "topo_ldo5/core_04.cir",
+        "topo_ldo5/core_03.cir",
+        "topo_ldo5/core_15.cir",
+        "topo_ldo5/core_07.cir",
+        "topo_ldo5/core_13.cir",
+        "topo_ldo5/core_12.cir",
+        "topo_ldo5/core_09.cir",
+        "topo_ldo5/core_11.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo5/core_02.cir",
+          "topo_ldo5/core_18.cir",
+          "topo_ldo5/core_17.cir",
+          "topo_ldo5/core_01.cir",
+          "topo_ldo5/core_16.cir",
+          "topo_ldo5/core_08.cir",
+          "topo_ldo5/core_10.cir",
+          "topo_ldo5/core_05.cir",
+          "topo_ldo5/core_19.cir",
+          "topo_ldo5/core_00.cir"
+        ],
+        "2": [
+          "topo_ldo5/core_02.cir",
+          "topo_ldo5/core_18.cir"
+        ],
+        "4": [
+          "topo_ldo5/core_02.cir",
+          "topo_ldo5/core_18.cir",
+          "topo_ldo5/core_17.cir",
+          "topo_ldo5/core_01.cir"
+        ],
+        "6": [
+          "topo_ldo5/core_02.cir",
+          "topo_ldo5/core_18.cir",
+          "topo_ldo5/core_17.cir",
+          "topo_ldo5/core_01.cir",
+          "topo_ldo5/core_16.cir",
+          "topo_ldo5/core_08.cir"
+        ],
+        "8": [
+          "topo_ldo5/core_02.cir",
+          "topo_ldo5/core_18.cir",
+          "topo_ldo5/core_17.cir",
+          "topo_ldo5/core_01.cir",
+          "topo_ldo5/core_16.cir",
+          "topo_ldo5/core_08.cir",
+          "topo_ldo5/core_10.cir",
+          "topo_ldo5/core_05.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo5/core_02.cir",
+        "topo_ldo5/core_18.cir",
+        "topo_ldo5/core_17.cir",
+        "topo_ldo5/core_01.cir",
+        "topo_ldo5/core_16.cir",
+        "topo_ldo5/core_08.cir",
+        "topo_ldo5/core_10.cir",
+        "topo_ldo5/core_05.cir",
+        "topo_ldo5/core_19.cir",
+        "topo_ldo5/core_00.cir"
+      ]
+    },
+    "topo_ldo6": {
+      "test": [
+        "topo_ldo6/core_07.cir",
+        "topo_ldo6/core_02.cir",
+        "topo_ldo6/core_06.cir",
+        "topo_ldo6/core_10.cir",
+        "topo_ldo6/core_01.cir",
+        "topo_ldo6/core_18.cir",
+        "topo_ldo6/core_12.cir",
+        "topo_ldo6/core_00.cir",
+        "topo_ldo6/core_17.cir",
+        "topo_ldo6/core_19.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo6/core_08.cir",
+          "topo_ldo6/core_05.cir",
+          "topo_ldo6/core_13.cir",
+          "topo_ldo6/core_16.cir",
+          "topo_ldo6/core_14.cir",
+          "topo_ldo6/core_09.cir",
+          "topo_ldo6/core_03.cir",
+          "topo_ldo6/core_04.cir",
+          "topo_ldo6/core_15.cir",
+          "topo_ldo6/core_11.cir"
+        ],
+        "2": [
+          "topo_ldo6/core_08.cir",
+          "topo_ldo6/core_05.cir"
+        ],
+        "4": [
+          "topo_ldo6/core_08.cir",
+          "topo_ldo6/core_05.cir",
+          "topo_ldo6/core_13.cir",
+          "topo_ldo6/core_16.cir"
+        ],
+        "6": [
+          "topo_ldo6/core_08.cir",
+          "topo_ldo6/core_05.cir",
+          "topo_ldo6/core_13.cir",
+          "topo_ldo6/core_16.cir",
+          "topo_ldo6/core_14.cir",
+          "topo_ldo6/core_09.cir"
+        ],
+        "8": [
+          "topo_ldo6/core_08.cir",
+          "topo_ldo6/core_05.cir",
+          "topo_ldo6/core_13.cir",
+          "topo_ldo6/core_16.cir",
+          "topo_ldo6/core_14.cir",
+          "topo_ldo6/core_09.cir",
+          "topo_ldo6/core_03.cir",
+          "topo_ldo6/core_04.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo6/core_08.cir",
+        "topo_ldo6/core_05.cir",
+        "topo_ldo6/core_13.cir",
+        "topo_ldo6/core_16.cir",
+        "topo_ldo6/core_14.cir",
+        "topo_ldo6/core_09.cir",
+        "topo_ldo6/core_03.cir",
+        "topo_ldo6/core_04.cir",
+        "topo_ldo6/core_15.cir",
+        "topo_ldo6/core_11.cir"
+      ]
+    },
+    "topo_ldo7": {
+      "test": [
+        "topo_ldo7/core_17.cir",
+        "topo_ldo7/core_16.cir",
+        "topo_ldo7/core_11.cir",
+        "topo_ldo7/core_00.cir",
+        "topo_ldo7/core_07.cir",
+        "topo_ldo7/core_02.cir",
+        "topo_ldo7/core_18.cir",
+        "topo_ldo7/core_13.cir",
+        "topo_ldo7/core_08.cir",
+        "topo_ldo7/core_12.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo7/core_14.cir",
+          "topo_ldo7/core_15.cir",
+          "topo_ldo7/core_19.cir",
+          "topo_ldo7/core_04.cir",
+          "topo_ldo7/core_10.cir",
+          "topo_ldo7/core_09.cir",
+          "topo_ldo7/core_06.cir",
+          "topo_ldo7/core_01.cir",
+          "topo_ldo7/core_03.cir",
+          "topo_ldo7/core_05.cir"
+        ],
+        "2": [
+          "topo_ldo7/core_14.cir",
+          "topo_ldo7/core_15.cir"
+        ],
+        "4": [
+          "topo_ldo7/core_14.cir",
+          "topo_ldo7/core_15.cir",
+          "topo_ldo7/core_19.cir",
+          "topo_ldo7/core_04.cir"
+        ],
+        "6": [
+          "topo_ldo7/core_14.cir",
+          "topo_ldo7/core_15.cir",
+          "topo_ldo7/core_19.cir",
+          "topo_ldo7/core_04.cir",
+          "topo_ldo7/core_10.cir",
+          "topo_ldo7/core_09.cir"
+        ],
+        "8": [
+          "topo_ldo7/core_14.cir",
+          "topo_ldo7/core_15.cir",
+          "topo_ldo7/core_19.cir",
+          "topo_ldo7/core_04.cir",
+          "topo_ldo7/core_10.cir",
+          "topo_ldo7/core_09.cir",
+          "topo_ldo7/core_06.cir",
+          "topo_ldo7/core_01.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo7/core_14.cir",
+        "topo_ldo7/core_15.cir",
+        "topo_ldo7/core_19.cir",
+        "topo_ldo7/core_04.cir",
+        "topo_ldo7/core_10.cir",
+        "topo_ldo7/core_09.cir",
+        "topo_ldo7/core_06.cir",
+        "topo_ldo7/core_01.cir",
+        "topo_ldo7/core_03.cir",
+        "topo_ldo7/core_05.cir"
+      ]
+    },
+    "topo_ldo8": {
+      "test": [
+        "topo_ldo8/core_17.cir",
+        "topo_ldo8/core_03.cir",
+        "topo_ldo8/core_09.cir",
+        "topo_ldo8/core_01.cir",
+        "topo_ldo8/core_10.cir",
+        "topo_ldo8/core_15.cir",
+        "topo_ldo8/core_18.cir",
+        "topo_ldo8/core_07.cir",
+        "topo_ldo8/core_04.cir",
+        "topo_ldo8/core_00.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo8/core_14.cir",
+          "topo_ldo8/core_08.cir",
+          "topo_ldo8/core_11.cir",
+          "topo_ldo8/core_13.cir",
+          "topo_ldo8/core_19.cir",
+          "topo_ldo8/core_06.cir",
+          "topo_ldo8/core_12.cir",
+          "topo_ldo8/core_02.cir",
+          "topo_ldo8/core_05.cir",
+          "topo_ldo8/core_16.cir"
+        ],
+        "2": [
+          "topo_ldo8/core_14.cir",
+          "topo_ldo8/core_08.cir"
+        ],
+        "4": [
+          "topo_ldo8/core_14.cir",
+          "topo_ldo8/core_08.cir",
+          "topo_ldo8/core_11.cir",
+          "topo_ldo8/core_13.cir"
+        ],
+        "6": [
+          "topo_ldo8/core_14.cir",
+          "topo_ldo8/core_08.cir",
+          "topo_ldo8/core_11.cir",
+          "topo_ldo8/core_13.cir",
+          "topo_ldo8/core_19.cir",
+          "topo_ldo8/core_06.cir"
+        ],
+        "8": [
+          "topo_ldo8/core_14.cir",
+          "topo_ldo8/core_08.cir",
+          "topo_ldo8/core_11.cir",
+          "topo_ldo8/core_13.cir",
+          "topo_ldo8/core_19.cir",
+          "topo_ldo8/core_06.cir",
+          "topo_ldo8/core_12.cir",
+          "topo_ldo8/core_02.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo8/core_14.cir",
+        "topo_ldo8/core_08.cir",
+        "topo_ldo8/core_11.cir",
+        "topo_ldo8/core_13.cir",
+        "topo_ldo8/core_19.cir",
+        "topo_ldo8/core_06.cir",
+        "topo_ldo8/core_12.cir",
+        "topo_ldo8/core_02.cir",
+        "topo_ldo8/core_05.cir",
+        "topo_ldo8/core_16.cir"
+      ]
+    },
+    "topo_ldo9": {
+      "test": [
+        "topo_ldo9/core_10.cir",
+        "topo_ldo9/core_17.cir",
+        "topo_ldo9/core_01.cir",
+        "topo_ldo9/core_03.cir",
+        "topo_ldo9/core_11.cir",
+        "topo_ldo9/core_16.cir",
+        "topo_ldo9/core_12.cir",
+        "topo_ldo9/core_09.cir",
+        "topo_ldo9/core_00.cir",
+        "topo_ldo9/core_18.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_ldo9/core_08.cir",
+          "topo_ldo9/core_14.cir",
+          "topo_ldo9/core_02.cir",
+          "topo_ldo9/core_19.cir",
+          "topo_ldo9/core_07.cir",
+          "topo_ldo9/core_05.cir",
+          "topo_ldo9/core_06.cir",
+          "topo_ldo9/core_04.cir",
+          "topo_ldo9/core_15.cir",
+          "topo_ldo9/core_13.cir"
+        ],
+        "2": [
+          "topo_ldo9/core_08.cir",
+          "topo_ldo9/core_14.cir"
+        ],
+        "4": [
+          "topo_ldo9/core_08.cir",
+          "topo_ldo9/core_14.cir",
+          "topo_ldo9/core_02.cir",
+          "topo_ldo9/core_19.cir"
+        ],
+        "6": [
+          "topo_ldo9/core_08.cir",
+          "topo_ldo9/core_14.cir",
+          "topo_ldo9/core_02.cir",
+          "topo_ldo9/core_19.cir",
+          "topo_ldo9/core_07.cir",
+          "topo_ldo9/core_05.cir"
+        ],
+        "8": [
+          "topo_ldo9/core_08.cir",
+          "topo_ldo9/core_14.cir",
+          "topo_ldo9/core_02.cir",
+          "topo_ldo9/core_19.cir",
+          "topo_ldo9/core_07.cir",
+          "topo_ldo9/core_05.cir",
+          "topo_ldo9/core_06.cir",
+          "topo_ldo9/core_04.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_ldo9/core_08.cir",
+        "topo_ldo9/core_14.cir",
+        "topo_ldo9/core_02.cir",
+        "topo_ldo9/core_19.cir",
+        "topo_ldo9/core_07.cir",
+        "topo_ldo9/core_05.cir",
+        "topo_ldo9/core_06.cir",
+        "topo_ldo9/core_04.cir",
+        "topo_ldo9/core_15.cir",
+        "topo_ldo9/core_13.cir"
+      ]
+    },
+    "topo_unseen1": {
+      "test": [
+        "topo_unseen1/core_06.cir",
+        "topo_unseen1/core_00.cir",
+        "topo_unseen1/core_05.cir",
+        "topo_unseen1/core_10.cir",
+        "topo_unseen1/core_08.cir",
+        "topo_unseen1/core_02.cir",
+        "topo_unseen1/core_19.cir",
+        "topo_unseen1/core_13.cir",
+        "topo_unseen1/core_17.cir",
+        "topo_unseen1/core_11.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_unseen1/core_09.cir",
+          "topo_unseen1/core_16.cir",
+          "topo_unseen1/core_04.cir",
+          "topo_unseen1/core_14.cir",
+          "topo_unseen1/core_03.cir",
+          "topo_unseen1/core_12.cir",
+          "topo_unseen1/core_15.cir",
+          "topo_unseen1/core_18.cir",
+          "topo_unseen1/core_01.cir",
+          "topo_unseen1/core_07.cir"
+        ],
+        "2": [
+          "topo_unseen1/core_09.cir",
+          "topo_unseen1/core_16.cir"
+        ],
+        "4": [
+          "topo_unseen1/core_09.cir",
+          "topo_unseen1/core_16.cir",
+          "topo_unseen1/core_04.cir",
+          "topo_unseen1/core_14.cir"
+        ],
+        "6": [
+          "topo_unseen1/core_09.cir",
+          "topo_unseen1/core_16.cir",
+          "topo_unseen1/core_04.cir",
+          "topo_unseen1/core_14.cir",
+          "topo_unseen1/core_03.cir",
+          "topo_unseen1/core_12.cir"
+        ],
+        "8": [
+          "topo_unseen1/core_09.cir",
+          "topo_unseen1/core_16.cir",
+          "topo_unseen1/core_04.cir",
+          "topo_unseen1/core_14.cir",
+          "topo_unseen1/core_03.cir",
+          "topo_unseen1/core_12.cir",
+          "topo_unseen1/core_15.cir",
+          "topo_unseen1/core_18.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_unseen1/core_09.cir",
+        "topo_unseen1/core_16.cir",
+        "topo_unseen1/core_04.cir",
+        "topo_unseen1/core_14.cir",
+        "topo_unseen1/core_03.cir",
+        "topo_unseen1/core_12.cir",
+        "topo_unseen1/core_15.cir",
+        "topo_unseen1/core_18.cir",
+        "topo_unseen1/core_01.cir",
+        "topo_unseen1/core_07.cir"
+      ]
+    },
+    "topo_unseen2": {
+      "test": [
+        "topo_unseen2/core_04.cir",
+        "topo_unseen2/core_09.cir",
+        "topo_unseen2/core_11.cir",
+        "topo_unseen2/core_13.cir",
+        "topo_unseen2/core_06.cir",
+        "topo_unseen2/core_14.cir",
+        "topo_unseen2/core_15.cir",
+        "topo_unseen2/core_17.cir",
+        "topo_unseen2/core_08.cir",
+        "topo_unseen2/core_16.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_unseen2/core_00.cir",
+          "topo_unseen2/core_10.cir",
+          "topo_unseen2/core_19.cir",
+          "topo_unseen2/core_12.cir",
+          "topo_unseen2/core_07.cir",
+          "topo_unseen2/core_18.cir",
+          "topo_unseen2/core_02.cir",
+          "topo_unseen2/core_01.cir",
+          "topo_unseen2/core_03.cir",
+          "topo_unseen2/core_05.cir"
+        ],
+        "2": [
+          "topo_unseen2/core_00.cir",
+          "topo_unseen2/core_10.cir"
+        ],
+        "4": [
+          "topo_unseen2/core_00.cir",
+          "topo_unseen2/core_10.cir",
+          "topo_unseen2/core_19.cir",
+          "topo_unseen2/core_12.cir"
+        ],
+        "6": [
+          "topo_unseen2/core_00.cir",
+          "topo_unseen2/core_10.cir",
+          "topo_unseen2/core_19.cir",
+          "topo_unseen2/core_12.cir",
+          "topo_unseen2/core_07.cir",
+          "topo_unseen2/core_18.cir"
+        ],
+        "8": [
+          "topo_unseen2/core_00.cir",
+          "topo_unseen2/core_10.cir",
+          "topo_unseen2/core_19.cir",
+          "topo_unseen2/core_12.cir",
+          "topo_unseen2/core_07.cir",
+          "topo_unseen2/core_18.cir",
+          "topo_unseen2/core_02.cir",
+          "topo_unseen2/core_01.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_unseen2/core_00.cir",
+        "topo_unseen2/core_10.cir",
+        "topo_unseen2/core_19.cir",
+        "topo_unseen2/core_12.cir",
+        "topo_unseen2/core_07.cir",
+        "topo_unseen2/core_18.cir",
+        "topo_unseen2/core_02.cir",
+        "topo_unseen2/core_01.cir",
+        "topo_unseen2/core_03.cir",
+        "topo_unseen2/core_05.cir"
+      ]
+    },
+    "topo_unseen3": {
+      "test": [
+        "topo_unseen3/core_12.cir",
+        "topo_unseen3/core_04.cir",
+        "topo_unseen3/core_17.cir",
+        "topo_unseen3/core_03.cir",
+        "topo_unseen3/core_07.cir",
+        "topo_unseen3/core_05.cir",
+        "topo_unseen3/core_19.cir",
+        "topo_unseen3/core_15.cir",
+        "topo_unseen3/core_00.cir",
+        "topo_unseen3/core_10.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_unseen3/core_06.cir",
+          "topo_unseen3/core_13.cir",
+          "topo_unseen3/core_02.cir",
+          "topo_unseen3/core_16.cir",
+          "topo_unseen3/core_14.cir",
+          "topo_unseen3/core_01.cir",
+          "topo_unseen3/core_08.cir",
+          "topo_unseen3/core_18.cir",
+          "topo_unseen3/core_09.cir",
+          "topo_unseen3/core_11.cir"
+        ],
+        "2": [
+          "topo_unseen3/core_06.cir",
+          "topo_unseen3/core_13.cir"
+        ],
+        "4": [
+          "topo_unseen3/core_06.cir",
+          "topo_unseen3/core_13.cir",
+          "topo_unseen3/core_02.cir",
+          "topo_unseen3/core_16.cir"
+        ],
+        "6": [
+          "topo_unseen3/core_06.cir",
+          "topo_unseen3/core_13.cir",
+          "topo_unseen3/core_02.cir",
+          "topo_unseen3/core_16.cir",
+          "topo_unseen3/core_14.cir",
+          "topo_unseen3/core_01.cir"
+        ],
+        "8": [
+          "topo_unseen3/core_06.cir",
+          "topo_unseen3/core_13.cir",
+          "topo_unseen3/core_02.cir",
+          "topo_unseen3/core_16.cir",
+          "topo_unseen3/core_14.cir",
+          "topo_unseen3/core_01.cir",
+          "topo_unseen3/core_08.cir",
+          "topo_unseen3/core_18.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_unseen3/core_06.cir",
+        "topo_unseen3/core_13.cir",
+        "topo_unseen3/core_02.cir",
+        "topo_unseen3/core_16.cir",
+        "topo_unseen3/core_14.cir",
+        "topo_unseen3/core_01.cir",
+        "topo_unseen3/core_08.cir",
+        "topo_unseen3/core_18.cir",
+        "topo_unseen3/core_09.cir",
+        "topo_unseen3/core_11.cir"
+      ]
+    },
+    "topo_unseen4": {
+      "test": [
+        "topo_unseen4/core_04.cir",
+        "topo_unseen4/core_01.cir",
+        "topo_unseen4/core_00.cir",
+        "topo_unseen4/core_12.cir",
+        "topo_unseen4/core_18.cir",
+        "topo_unseen4/core_16.cir",
+        "topo_unseen4/core_19.cir",
+        "topo_unseen4/core_07.cir",
+        "topo_unseen4/core_17.cir",
+        "topo_unseen4/core_15.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_unseen4/core_13.cir",
+          "topo_unseen4/core_14.cir",
+          "topo_unseen4/core_11.cir",
+          "topo_unseen4/core_08.cir",
+          "topo_unseen4/core_10.cir",
+          "topo_unseen4/core_05.cir",
+          "topo_unseen4/core_02.cir",
+          "topo_unseen4/core_09.cir",
+          "topo_unseen4/core_06.cir",
+          "topo_unseen4/core_03.cir"
+        ],
+        "2": [
+          "topo_unseen4/core_13.cir",
+          "topo_unseen4/core_14.cir"
+        ],
+        "4": [
+          "topo_unseen4/core_13.cir",
+          "topo_unseen4/core_14.cir",
+          "topo_unseen4/core_11.cir",
+          "topo_unseen4/core_08.cir"
+        ],
+        "6": [
+          "topo_unseen4/core_13.cir",
+          "topo_unseen4/core_14.cir",
+          "topo_unseen4/core_11.cir",
+          "topo_unseen4/core_08.cir",
+          "topo_unseen4/core_10.cir",
+          "topo_unseen4/core_05.cir"
+        ],
+        "8": [
+          "topo_unseen4/core_13.cir",
+          "topo_unseen4/core_14.cir",
+          "topo_unseen4/core_11.cir",
+          "topo_unseen4/core_08.cir",
+          "topo_unseen4/core_10.cir",
+          "topo_unseen4/core_05.cir",
+          "topo_unseen4/core_02.cir",
+          "topo_unseen4/core_09.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_unseen4/core_13.cir",
+        "topo_unseen4/core_14.cir",
+        "topo_unseen4/core_11.cir",
+        "topo_unseen4/core_08.cir",
+        "topo_unseen4/core_10.cir",
+        "topo_unseen4/core_05.cir",
+        "topo_unseen4/core_02.cir",
+        "topo_unseen4/core_09.cir",
+        "topo_unseen4/core_06.cir",
+        "topo_unseen4/core_03.cir"
+      ]
+    },
+    "topo_unseen5": {
+      "test": [
+        "topo_unseen5/core_01.cir",
+        "topo_unseen5/core_03.cir",
+        "topo_unseen5/core_19.cir",
+        "topo_unseen5/core_15.cir",
+        "topo_unseen5/core_04.cir",
+        "topo_unseen5/core_14.cir",
+        "topo_unseen5/core_11.cir",
+        "topo_unseen5/core_10.cir",
+        "topo_unseen5/core_17.cir",
+        "topo_unseen5/core_13.cir"
+      ],
+      "train_by_shot": {
+        "10": [
+          "topo_unseen5/core_02.cir",
+          "topo_unseen5/core_09.cir",
+          "topo_unseen5/core_00.cir",
+          "topo_unseen5/core_06.cir",
+          "topo_unseen5/core_07.cir",
+          "topo_unseen5/core_12.cir",
+          "topo_unseen5/core_08.cir",
+          "topo_unseen5/core_18.cir",
+          "topo_unseen5/core_05.cir",
+          "topo_unseen5/core_16.cir"
+        ],
+        "2": [
+          "topo_unseen5/core_02.cir",
+          "topo_unseen5/core_09.cir"
+        ],
+        "4": [
+          "topo_unseen5/core_02.cir",
+          "topo_unseen5/core_09.cir",
+          "topo_unseen5/core_00.cir",
+          "topo_unseen5/core_06.cir"
+        ],
+        "6": [
+          "topo_unseen5/core_02.cir",
+          "topo_unseen5/core_09.cir",
+          "topo_unseen5/core_00.cir",
+          "topo_unseen5/core_06.cir",
+          "topo_unseen5/core_07.cir",
+          "topo_unseen5/core_12.cir"
+        ],
+        "8": [
+          "topo_unseen5/core_02.cir",
+          "topo_unseen5/core_09.cir",
+          "topo_unseen5/core_00.cir",
+          "topo_unseen5/core_06.cir",
+          "topo_unseen5/core_07.cir",
+          "topo_unseen5/core_12.cir",
+          "topo_unseen5/core_08.cir",
+          "topo_unseen5/core_18.cir"
+        ]
+      },
+      "train_pool": [
+        "topo_unseen5/core_02.cir",
+        "topo_unseen5/core_09.cir",
+        "topo_unseen5/core_00.cir",
+        "topo_unseen5/core_06.cir",
+        "topo_unseen5/core_07.cir",
+        "topo_unseen5/core_12.cir",
+        "topo_unseen5/core_08.cir",
+        "topo_unseen5/core_18.cir",
+        "topo_unseen5/core_05.cir",
+        "topo_unseen5/core_16.cir"
+      ]
+    }
+  },
+  "topology_count": 42,
+  "train_pool_per_topology": 10
+}

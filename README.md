@@ -1,18 +1,20 @@
 # PathWeave
 
-论文 **PathWeave: A Path-Aware Structural Representation for Macromodel Topology Recovery of Analog Circuits** 已被 **DATE 2027** 录用。
+**English** | [简体中文](README.zh-CN.md)
 
-PathWeave 将晶体管级电路编码为 128 维 embedding，并与 Gm+RC 功能宏模型对齐；可选的 GRU decoder 用于拓扑重构评估。
+**PathWeave: A Path-Aware Structural Representation for Macromodel Topology Recovery of Analog Circuits** has been accepted at **DATE 2027**.
 
-- 输入表示：Netlist、Vpath-only、PathWeave。
-- GNN backbone：GraphSAGE、GAT、GINE。
-- 评测设置：42 个 macro、每 macro 20 个电路，2/4/6/8/10-shot、6 个随机种子。
-- 支持独立训练、checkpoint 重载验证、逐配置导出和跨 seed 汇总。
+PathWeave encodes transistor-level circuits into 128-dimensional embeddings and aligns them with Gm+RC functional macromodels. An optional GRU decoder evaluates topology reconstruction.
 
-## 安装
+- Input representations: Netlist, Vpath-only, and PathWeave.
+- GNN backbones: GraphSAGE, GAT, and GINE.
+- Evaluation: 42 macromodels with 20 circuits each, 2/4/6/8/10-shot settings, and six random seeds.
+- Supports independent training, checkpoint reload evaluation, per-configuration exports, and aggregation across seeds.
 
-- 已验证：Linux/WSL、Python 3.11.13。
-- 使用发布的预处理图复算 encoder 指标只需 CPU，无需 CktPath；decoder 严格对照默认使用原 CUDA 设备。
+## Installation
+
+- Verified environment: Linux/WSL, Python 3.11.13.
+- Encoder evaluation with the provided preprocessed graphs runs on CPU without CktPath. Strict decoder comparisons use the original CUDA device by default.
 
 ```bash
 git clone https://github.com/leemzmz/PathWeave.git app_pathweave
@@ -22,34 +24,37 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-- `requirements-dev.txt`：运行依赖及测试工具。
-- `requirements-analysis.txt`：论文图、shortcut 等分析所需的额外依赖。
-- [CktPath](https://github.com/leemzmz/CktPath)：私有仓库，available upon request。
-- 仅处理新网表、电路生成或运行原始训练流程时需要 CktPath；放在同级 `path/`，使用提交 `14938f288c5dcd94f939b02970c7cf15a5505890`。
-- Decoder 可用 `--decoder-device cpu --allow-differences` 在 CPU 上执行诊断；生成序列可能因数值差异改变，不保证与 CUDA 归档完全一致。
+- `requirements-dev.txt`: runtime dependencies and test tools.
+- `requirements-analysis.txt`: additional dependencies for paper figures and shortcut analyses.
+- For CPU decoder diagnostics, use `--decoder-device cpu --allow-differences`. Numerical differences may change generated sequences; exact agreement with the CUDA archive is not guaranteed.
 
-## CktPath 方法应用
+## CktPath: optional private dependency and related papers
 
-CktPath 方法还在如下论文中应用：
+- [CktPath](https://github.com/leemzmz/CktPath) is a private repository, available upon request from the authors.
+- Evaluating the provided models with the preprocessed graphs does not require CktPath. The public data does not contain its source code.
+- CktPath is required for processing new netlists, generating circuits, or running the original training workflow.
+- Once access is granted, place it in a sibling `path/` directory and use commit `14938f288c5dcd94f939b02970c7cf15a5505890`.
 
-- [IEEE Xplore 论文 1](https://ieeexplore.ieee.org/document/11270852)
-- [IEEE Xplore 论文 2](https://ieeexplore.ieee.org/document/11614522)
+The CktPath method is also applied in the following two journal papers in **IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (IEEE TCAD)**:
 
-## 数据与结果
+1. Mingzhen Li and Guoyong Shi, [**A Signal-Path Recognition Approach to Multistage Op-Amp Pole-Zero Extraction With Applications**](https://ieeexplore.ieee.org/document/11270852), **IEEE TCAD**, 2026. DOI: [10.1109/TCAD.2025.3638265](https://doi.org/10.1109/TCAD.2025.3638265).
+2. Yapeng Li, Peng Xu, Mingzhen Li, Tsung-Yi Ho, Bei Yu, and Tinghuan Chen, [**Analog Circuit Representation Learning Informed by Kirchhoff’s Current Law**](https://ieeexplore.ieee.org/document/11614522), **IEEE TCAD**, 2026. DOI: [10.1109/TCAD.2026.3715070](https://doi.org/10.1109/TCAD.2026.3715070).
 
-| 输入 | 预处理图 | 模型与结果 |
+## Data and results
+
+| Input | Preprocessed graphs | Models and results |
 |---|---|---|
-| `_data/` | `preprocessed/data/` | `_run/models/`、`_run/results/` |
-| `_data_new/` | `preprocessed/data_new/` | `_run_new/models/`、`_run_new/results/` |
+| `_data/` | `preprocessed/data/` | `_run/models/`, `_run/results/` |
+| `_data_new/` | `preprocessed/data_new/` | `_run_new/models/`, `_run_new/results/` |
 
-- 两套数据均为 42 macro × 20 core；新数据含 folded 255 个、non-folded 585 个。
-- 两套归档均仅包含 `README.md`、`models/`、`results/`；不附带训练源码或 CktPath 快照。
-- 每套完整实验包含 270 circuit encoder、54 decoder 和 6 target encoder。
-- 新数据的表格、实验图及数值见 [实验报告](_run_new/results/analysis/paper_results.md)。
+- Each dataset contains 42 macromodels × 20 circuits. The new dataset includes 255 folded and 585 non-folded circuits.
+- Both archives contain only `README.md`, `models/`, and `results/`; they do not include training-source or CktPath snapshots.
+- Each complete experiment includes 270 circuit encoders, 54 decoders, and six target encoders.
+- Tables, figures, and numerical results for the new dataset are in the [experiment report](_run_new/results/analysis/paper_results.md) (Chinese).
 
-## 无需 CktPath 复算模型
+## Evaluate the models without CktPath
 
-先验证新数据的一组模型：
+Start with one configuration on the new dataset:
 
 ```bash
 python Run/evaluate_preprocessed.py \
@@ -57,13 +62,13 @@ python Run/evaluate_preprocessed.py \
   --output _experiments/reload_example.json
 ```
 
-复算新数据的六 seed 完整矩阵（270 encoder、54 decoder；decoder 需要 CUDA）：
+Evaluate the complete six-seed matrix on the new dataset (270 encoders and 54 decoders; the decoder requires CUDA):
 
 ```bash
 python Run/evaluate_preprocessed.py --decoder --output _experiments/reload_new.json
 ```
 
-复算原始数据并记录与历史结果的差异：
+Evaluate the original dataset and record differences from the archived results:
 
 ```bash
 python Run/evaluate_preprocessed.py \
@@ -71,25 +76,25 @@ python Run/evaluate_preprocessed.py \
   --decoder --allow-differences --output _experiments/reload_original.json
 ```
 
-- `preprocessed/data/`、`preprocessed/data_new/` 分别保存 840 个电路的三种模型输入图；只含张量、特征定义和哈希，不含 CktPath 源码。
-- 入口实际加载权重并重新计算指标，与原始结果逐项比较；不训练，不改写历史协议或归档结果。
-- 默认严格比较，存在差异即报错；`--allow-differences` 仅生成诊断报告，不将差异标记为复现通过。
-- 原始网表仅用于样本身份和哈希核验；此入口不从网表提取路径。
-- 输出文件必须是新文件，且位于输入和归档目录之外。
-- 本环境完整验证：新数据 270 encoder + 54 decoder 的全部指标与归档完全一致。
-- 原始数据主要检索指标及 54 decoder 全部一致；14 组 encoder 的 `target_manifold_spearman` 有差异，最大约 `2.67e-5`，因此旧数据命令使用诊断模式。
-- 详细格式、验证结果和复现边界见 [复现指南](_docs/reproducibility.md)。
+- `preprocessed/data/` and `preprocessed/data_new/` each provide the three input representations for 840 circuits. They contain tensors, feature definitions, and hashes, with no CktPath source code.
+- The evaluator loads the weights, recomputes metrics, and compares them with the archived results. It does not train models or modify historical protocols or results.
+- Comparisons are strict by default and fail on differences. `--allow-differences` produces a diagnostic report; it does not mark mismatches as successful reproduction.
+- Original netlists are used only to verify sample identities and hashes. This entry point does not extract paths from netlists.
+- The output must be a new file outside the input and archive directories.
+- Full validation in the recorded environment: all metrics for the new dataset's 270 encoders and 54 decoders exactly match the archive.
+- For the original dataset, the main retrieval metrics and all 54 decoder results match. Fourteen encoder configurations differ in `target_manifold_spearman`, by at most approximately `2.67e-5`; the command above therefore uses diagnostic mode.
+- See the [reproducibility guide](_docs/reproducibility.md) (Chinese) for formats, validation results, and reproduction limits.
 
-## 归档核验与训练
+## Archive checks and training
 
-只读检查已有归档（无需 CktPath）：
+Validate existing archives without modifying them (no CktPath required):
 
 ```bash
 python Run/check_archive.py
 PATHWEAVE_DATASET_DIR=_data_new PATHWEAVE_RUN_DIR=_run_new python Run/check_archive.py
 ```
 
-使用当前代码启动独立实验：
+Start an independent experiment with the current code:
 
 ```bash
 PATHWEAVE_DATASET_DIR=_data_new \
@@ -99,20 +104,22 @@ PATHWEAVE_RUN_DIR=_experiments/example \
   --shot 2 --gnn graphsage --seed 42
 ```
 
-- 默认读取 `_data/`，写入 `_run/`；两项环境变量可指定其他数据与产物根。
-- 相对配置路径以项目根为基准；独立实验写入各自的 `models/`、`results/`。
-- `--phase all` 依次训练、独立重载评估和汇总；`--stage decoder` 单独运行 10-shot decoder。
-- 两套归档均对应各自训练版本；当前代码不能通过刷新协议来续跑历史 checkpoint。
-- 预处理图入口用于已有权重的指标复算；原始网表训练入口仍需要 CktPath。
-- 重载评估通过不代表从头训练会逐位重现历史权重；不修改既有协议来绕过来源差异。
+- The training workflow reads `_data/` and writes to `_run/` by default; the two environment variables select other dataset and output roots.
+- Relative configuration paths are resolved against the project root. Independent experiments write to their own `models/` and `results/` directories.
+- `--phase all` runs training, independent reload evaluation, and aggregation in sequence. `--stage decoder` runs the separate 10-shot decoder workflow.
+- Each archive corresponds to its original training version. Do not refresh protocols to resume historical checkpoints with the current code.
+- The preprocessed-graph entry point recomputes metrics from existing weights; the original netlist training entry point still requires CktPath.
+- Successful reload evaluation does not imply that training from scratch reproduces historical weights bit for bit. Do not modify existing protocols to bypass provenance differences.
 
-## 文档与贡献
+## Documentation and contributions
 
-- [文档索引](_docs/README.md)：架构、模型、数据、术语与复现指南。
-- [目录结构](_docs/directory_structure.md)：代码职责和文件位置。
-- [贡献指南](CONTRIBUTING.md)：检查要求、实验归档约定与 Git 发布检查。
+The detailed guides below are currently in Chinese:
 
-## 许可证
+- [Documentation index](_docs/README.md): architecture, models, datasets, terminology, and reproducibility.
+- [Directory structure](_docs/directory_structure.md): module responsibilities and file locations.
+- [Contribution guide](CONTRIBUTING.md): checks, archive conventions, and Git release checks.
 
-- 本项目代码采用 [MIT License](LICENSE)。
-- 第三方依赖保留各自的许可证和版权声明。
+## License
+
+- Project code is licensed under the [MIT License](LICENSE).
+- Third-party dependencies retain their respective licenses and copyright notices.

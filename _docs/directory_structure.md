@@ -1,7 +1,7 @@
 # 目录结构
 
 ## 项目入口
-- `README.md`：安装与快速使用。
+- `README.md`、`README.zh-CN.md`：英文与中文安装、模型复算和训练指南；包含独立 CktPath 说明及 TCAD 文献。
 - `LICENSE`、`CONTRIBUTING.md`：MIT 许可与贡献要求。
 - `requirements.txt`、`requirements-dev.txt`、`requirements-analysis.txt`：运行、测试和分析依赖。
 - `_project_paths.py`：默认数据/产物根及环境变量配置。
